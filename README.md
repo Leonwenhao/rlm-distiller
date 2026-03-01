@@ -92,7 +92,6 @@ rlm-distiller/
 │   ├── eval_dataset.json                  # 25 ground-truth eval scenarios
 │   └── generate_traces.py                 # Trace generation script (Claude API)
 ├── demo-site/                     # Interactive React dashboard (deploys to Vercel)
-├── FINDINGS_AND_DATA_SYNTHESIS.md # Comprehensive analysis of all results
 ├── gpu_export/                    # Raw data from overnight run
 │   ├── loop_output.log            # Full overnight execution log
 │   ├── weave_urls.txt             # All 875 Weave trace URLs
@@ -110,7 +109,7 @@ If you want to understand the engineering, start with these:
 
 **`finetune/train_qlora.py`** — QLoRA training with PEFT + TRL. 4-bit NF4 quantization, LoRA rank 16, alpha 32, targeting all linear layers. Trains on the same GPU that serves the model.
 
-**`FINDINGS_AND_DATA_SYNTHESIS.md`** — Complete analysis of the overnight run produced by exhaustive review of all data files.
+**`gpu_export/loop_results/`** — Per-iteration evaluation results, training data, and targeted examples from the overnight run.
 
 ---
 
