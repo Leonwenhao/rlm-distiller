@@ -148,7 +148,7 @@ If you want to understand the engineering, start with these:
 
 The `demo-site/` directory contains an interactive React dashboard built with Recharts that visualizes the complete overnight results. It includes six tabs: the architecture and problem statement, the training methodology, the self-improvement loop with Weave trace timeline, score trajectories across all 7 iterations, convergence analysis with oscillation evidence, and cost breakdown.
 
-**Live demo:** [deployed URL]
+**Live demo:** https://demo-site-mu-rust.vercel.app
 
 ---
 
