@@ -1,0 +1,1024 @@
+2026-03-01 05:35:14 | INFO | Resuming from iteration 0
+/home/ubuntu/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (6.0.0.post1)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from WANDB_API_KEY.
+wandb: Currently logged in as: leonwenhao (leonwenhao-dolores-research) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: setting up run yw9w1jfb
+wandb: Tracking run with wandb version 0.25.0
+wandb: Run data is saved locally in /home/ubuntu/rlm-distiller/wandb/run-20260301_053515-yw9w1jfb
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run self-improvement-loop-20260301-053515
+wandb: ⭐️ View project at https://wandb.ai/leonwenhao-dolores-research/rlm-distiller
+wandb: 🚀 View run at https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/runs/yw9w1jfb
+2026-03-01 05:35:16 | INFO | ============================================================
+2026-03-01 05:35:16 | INFO | ITERATION 0
+2026-03-01 05:35:16 | INFO | ============================================================
+2026-03-01 05:35:16 | INFO | Step 1: Running evaluation...
+[36m[1mweave[0m: Logged in as Weights & Biases user: leonwenhao.
+[36m[1mweave[0m: View Weave data at https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/weave
+
+[36m[1mweave[0m: Logged in as Weights & Biases user: leonwenhao.
+[36m[1mweave[0m: View Weave data at https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/weave
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e4-ded6-73ed-8d6a-07b186a3e3d9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e6-0740-7c10-a3c3-6b598b239f9e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e6-074c-7ce2-87cb-988d6ba12a0e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e6-074b-729f-9b80-f365b9a1bb5d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e6-0756-70c3-9841-c0a8bb503e81
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e6-0752-7b3d-96d0-c908203301c6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e7-2e03-729a-8dce-c86d562f9eed
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e7-2e04-758f-9cb6-482facc7fc28
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e7-2e05-772c-9006-56cbfc7e0989
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e7-2e09-7af3-9136-63bdba0667cf
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e7-2e08-7003-9c55-0cab4d0b02d8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e8-54a1-7f9c-9dae-e2fda2852dc2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e8-54a2-701a-b8de-cc709901cd14
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e8-54a3-7202-aad3-c557d8b99a57
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e8-54a7-71f2-8c08-e0bbd31f9dd0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e8-54a7-765f-880c-1af44206e5d0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e9-7b4e-7d7c-8abb-3058026f6216
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e9-7b4f-7ae4-869c-0357f311b558
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e9-7b50-7b57-894b-3e3db9a4a2db
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e9-7b51-7bcf-b805-802cff01f430
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7e9-7b55-70e6-b072-7a63b34e6637
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ea-a1fc-79df-96e2-0111717413df
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ea-a1fd-7f68-b884-247bed85c49a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ea-a1fe-7a48-aba6-b1018a82c6d3
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ea-a1ff-7de9-9d72-9d206f147902
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ea-a1fe-7379-8631-fef6134c2607
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7eb-c893-726a-b566-bfaec75427b3
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7eb-c894-7606-9050-92a0a84edd15
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7eb-c895-7ec1-964d-7399f68038a8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7eb-c895-76a9-85fd-1ee3dba1d620
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7eb-c894-7856-ab51-1ec0c01c47f4
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ec-ef29-71b0-9fa9-866d8138214d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ec-ef2a-7ca5-a7b8-cc98c4d76e3d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ec-ef2c-7a12-a5a1-96b5c782a40d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ec-ef2c-77b2-ad8b-18181d84f62c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ec-ef2b-719a-9ac5-0443064fe3a5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ee-15c2-79c2-9d07-2cde3f4a9b85
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ee-15c3-7d3b-81c1-0d2433f69b90
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ee-15c4-7931-a34f-0be5543227b2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ee-15c5-76f7-b1b7-c3bbb031d8c5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ee-15c4-76d3-ac18-53891d1f489b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ef-3c5e-7cc6-b820-cc95afe2e801
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ef-3c60-7bb8-9de7-4bf39e261d02
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ef-3c60-7302-b87e-5c944b07baf5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ef-3c61-7a64-b8ee-16c4c1db6df5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ef-3c5f-706f-a76a-d3d3f395520b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f0-62fd-7449-a848-8438f710d933
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f0-62fe-79e1-9f4e-938e21c604ee
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f0-6300-7468-8099-5f5240ae3522
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f0-6300-7345-a71d-94f2c34422d2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f0-62ff-7dee-9fe1-09282326d942
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f1-89a7-7876-9140-7008783d9f0d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f1-89a9-7b88-81b6-df75357074dc
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f1-89ab-79ce-a370-eb4efdb3a133
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f1-89ac-7e4b-b7c8-2e1847c14429
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f1-89aa-74ca-874a-e185b4c904e7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f2-b04a-7ef3-baf4-a037b71edf68
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f2-b04b-78a3-a426-4c95567fcf4c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f2-b04c-7038-88ce-164a0607aa25
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f2-b04c-7ecc-be8f-3405e6de0dd4
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f2-b04c-7d61-a9c9-11f539aa9287
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f3-d6ec-7fde-b696-050728afd1ca
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f3-d6ee-7397-8ee7-68295c8c2c2c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f3-d6ee-7ecd-a991-50f749741da5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f3-d6ef-78cc-85be-92add5f77e2e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f3-d6ed-749e-b0d7-2f2a7c0563bd
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f4-fd96-767b-8c58-60bc0bbc24b1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f4-fd98-78ef-89fc-ca1af90c8e63
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f4-fd97-7ef6-8db6-ae53097b14a0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f4-fd99-7fdf-82a1-37d6a0d07a9b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f4-fd99-7e60-8522-fa3bec7f9626
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f6-2433-776d-aca3-55d51e595e10
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f6-2435-74b4-aaa3-51cfa42a2c7a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f6-2434-7944-ba43-1dbf97a6923e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f6-2435-7c96-b420-36f96fa05510
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f6-2434-7034-94a4-d03674647fdd
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f7-4ac7-7d8e-b97f-8871f27578a5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f7-4ac9-7866-bfde-db29a9fd7d0e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f7-4ac9-71a0-abfc-0eaf9c20e07b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f7-4aca-7cf9-a509-315df832a972
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f7-4aca-753c-923b-e1692b9d0ef8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f8-7160-7482-951d-4a5f14cf6066
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f8-7162-7bfa-b0b0-b2c9022301f8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f8-7162-7498-8dbd-8ff2984c47da
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f8-7163-78e5-8a92-3007b1f46877
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f8-7163-77e2-bce2-965bb2b181cf
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f9-97f9-7314-8bd3-eb2d5a73cf5b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f9-97fa-71dd-845e-5e7c0681572a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f9-97fb-73c3-95a9-4477fd189097
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f9-97fb-7758-a0d3-78e50e964d4e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7f9-97fc-71e0-8790-72caa7ce905b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fa-be8e-7335-a480-d497fe81d8e2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fa-be90-71f1-bb97-78de65939623
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fa-be91-736e-92fd-1083abc07e1f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fa-be92-7d49-ad87-8add130452af
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fa-be91-7ada-bc6d-79a6f654bf3b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fb-e52a-70f7-b689-ebee82898b24
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fb-e52b-7b4e-af1f-03adb1ebb6e8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fb-e52c-7201-baac-4255e00d1325
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fb-e52c-71ff-97a8-9667ef5bb1f7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fb-e52d-73e9-9945-6fa8c52f72b6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fd-0bcc-70af-9f50-58fb9010a1b5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fd-0bcd-7cee-b4da-3204d7096609
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fd-0bcd-7613-8a39-a26450872571
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fd-0bce-702c-924a-17ea7a18003f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fd-0bce-74d1-9663-5da185a3ab9a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fe-3267-7de5-92e9-75b8cc594846
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fe-3268-7361-a266-60d5f91258e0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fe-3269-7b54-9a22-806191e41729
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fe-3269-7c83-9216-f4bac40bc50f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7fe-326a-7a76-8128-5c83ac6d121a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ff-590a-7112-8d09-5797774543e0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ff-590d-7706-ac4b-8aea3cb424c0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ff-590d-7eba-838c-568a3b5decf3
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ff-590b-7e84-a5e7-2a5c4d28de0f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca7ff-590c-7a4b-a9ea-2d31ecca759c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca800-7fa8-78e2-b9a0-578519fc4bcc
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca800-7fa9-78fe-9d77-357f91ed4de1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca800-7fa9-7095-b956-2a17eaba0546
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca800-7faa-78ee-bb9a-f96f1212cd47
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca800-7faa-7b8e-9ada-7f1cbbedc965
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca801-a653-7bc0-b855-c1e2fdef9f94
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca801-a654-7820-a432-993afa56911a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca801-a654-7e34-9fd3-51dd5dbe0d79
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca801-a655-7997-bbaf-72179883811c
+2026-03-01 06:06:46 | INFO | Eval scores: routing=0.088 errors=0.000 retry=0.410 synthesis=0.375 overall=0.218
+2026-03-01 06:06:46 | INFO | Step 2: Analyzing failure modes...
+2026-03-01 06:06:46 | INFO | Top failure modes: ['missed_errors', 'bad_retry_decisions', 'routing_failures']
+2026-03-01 06:06:46 | INFO | Step 3: Generating targeted training examples...
+2026-03-01 06:06:46 | INFO | Step 4: Merging base and targeted training data...
+2026-03-01 06:06:46 | INFO | Step 5: Starting fine-tuning iteration 1...
+2026-03-01 06:44:33 | INFO | Fine-tuning completed for iteration 1
+2026-03-01 06:44:33 | INFO | Step 6: Waiting for model server readiness...
+2026-03-01 06:44:33 | INFO | ============================================================
+2026-03-01 06:44:33 | INFO | ITERATION 1
+2026-03-01 06:44:33 | INFO | ============================================================
+2026-03-01 06:44:33 | INFO | Step 1: Running evaluation...
+
+[36m[1mweave[0m: Logged in as Weights & Biases user: leonwenhao.
+[36m[1mweave[0m: View Weave data at https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/weave
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca824-4688-73a9-afaa-43ff6cfb5745
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca825-6d94-7f65-a8a0-939fa0b9f429
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca825-6d96-7589-b929-bfebf3dd7143
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca825-6d98-75f5-9166-5d48ad6c53a5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca825-6d9a-7951-9675-539e210a57ce
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca825-6d9b-7c04-937f-e110790774c4
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca826-945a-76dc-9e26-ac08b72a5d58
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca826-945d-72cd-8dad-68e3698bb122
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca826-945e-704d-809f-41e4b8695384
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca826-945e-7571-a017-13fda1e27681
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca826-9461-7c36-97c5-55af60fb9c5d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca827-bb18-7a54-967a-50e04fa8557d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca827-bb19-7ba2-8536-435fe36789b9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca827-bb1c-7af8-9f37-d50d630e785c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca827-bb1d-7323-986f-c5e8cd8fc58b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca827-bb1d-7182-8751-892ef7153bfd
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca828-e1e3-7be6-9bfe-b20da9f8cf9a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca828-e1e4-7d1a-beea-3e5cde06dfe8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca828-e1e7-768a-9777-9c2d65d630bf
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca828-e1e8-74be-8071-22c5bcd68cae
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca828-e1e8-7c62-96c8-548ce999bd0a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82a-08ae-7bb0-98fb-d9f9cb4858e8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82a-08b0-736c-905f-d49710c3f53d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82a-08b4-7853-8abd-39e1c0034e2f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82a-08b0-7b7b-a325-6e3742513dbd
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82a-08af-77dc-8cf2-f0fa09a91fb2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82b-2f53-727d-8197-e2b145549d1c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82b-2f55-76c7-a042-34e85b65b2a0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82b-2f56-7fbd-ab8a-f99bbbd542e5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82b-2f57-7e3b-bfbb-cd98e589feec
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82b-2f57-764b-a9cb-637d3aff220f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82c-55fd-73f9-b1f9-5079d7b0b3de
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82c-55ff-73d9-8944-1943a4ebd260
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82c-55fe-7797-88b0-2c432155b6a1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82c-5600-7bc1-9e7f-505befa0333a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82c-5600-7b94-adc2-69292d517eee
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82d-7cb4-795c-84b7-29caf8d666a7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82d-7cb5-7728-b8c4-1d2a7ddaa44a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82d-7cb6-78f3-90b7-db068edb5aaf
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82d-7cb7-769a-a235-00467932a195
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82d-7cb5-73eb-8cc0-cb39f06539ad
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82e-a368-78f2-9488-2c0f420de232
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82e-a369-719b-93fa-02f2363eb295
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82e-a369-712e-92c0-3324d37003e8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82e-a36a-781a-a817-68a0b9d407d7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82e-a36a-7098-a38c-6338f0c0398d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82f-ca25-7be0-b0c8-9dc82e1761a0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82f-ca26-7ba5-9142-08a03c4e7dca
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82f-ca27-7667-b9d7-03d4b1b38654
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82f-ca28-70f5-bc6a-bb6c2a9e05fb
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca82f-ca28-70a0-a58f-4d62fc35b53a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca830-f0e8-7456-a66d-b791af4ee1c5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca830-f0e9-747c-9116-5b27b49d43ce
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca830-f0ea-78bc-9f0a-8083e7b18801
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca830-f0eb-762e-894c-02c9e6637b38
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca830-f0eb-7e2f-9154-f050b69bc139
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca832-17a4-79ae-8443-dfe9a5e7af52
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca832-17a6-7dbb-a42a-3bc02a277a0d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca832-17a5-7c8f-93fb-ae638df2741e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca832-17a7-704a-9f34-fbeda264260c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca832-17a6-76be-9df5-b7982638538f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca833-3e5f-76ce-823b-72120b2eb7df
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca833-3e60-71cc-9d3b-80e4c671911d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca833-3e61-7877-9949-d0ed7e36092d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca833-3e62-7a2f-9371-1e13c918886e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca833-3e62-7d6e-a11e-6a22b848b4d7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca834-652a-7ccf-ba95-1025ef40784a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca834-652c-707e-99f5-d6d5b3da5eb0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca834-652b-7a7d-8a51-77944752040c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca834-652d-7afe-b1cb-cd753a971f92
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca834-652d-74f8-b3d0-c3c91f0cccc8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca835-8bee-76a8-96c8-7a9d7cc6afa1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca835-8bef-7a93-a8a7-4bcb9b2b4fee
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca835-8bef-7118-ad29-01b2037e303d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca835-8bf0-7f62-91c1-ef611af17938
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca835-8bed-7e11-85a5-2c65c64f65d7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca836-b2ee-7a8c-a081-f2c00e377f45
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca836-b2ef-7c13-8175-efae135a492c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca836-b2f0-7389-baf6-bbc2032e35f7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca836-b2f0-7ca2-91f0-17cca044fd13
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca836-b2f1-7b36-a0f7-078aa52c0989
+[36m[1mweave[0m: retry_attempt
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca837-d9a5-71b9-aa29-9d37fe93c366
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca837-d9a6-70c1-9e17-67af7fca0552
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca837-d9a7-7454-861e-1a03a9b6fedc
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca837-d9a8-7e40-a857-d32618f00c46
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca837-d9ab-7bb6-8808-347c71fda206
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca839-005d-7340-85a2-c784f7bb6aff
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca839-005e-7b5b-af33-0d2614890aec
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca839-005f-7338-b5af-9f6dd20eeec1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca839-005e-7dcc-a010-15ae2964d45a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca839-005f-74b6-9aba-c84c5e4e76fd
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83a-2707-7631-ba7a-1151ad103a3a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83a-2708-7c07-b67a-95abdcdd2c45
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83a-2709-7167-ad9e-01cf4e8b4290
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83a-270a-79f5-b610-0e189af9a9ba
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83a-270a-7444-ac37-3630a8581cc2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83b-4db9-7b44-bbf7-55ad4055a7d0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83b-4dba-7cd8-9ee6-a98d698866b9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83b-4dbb-7581-b3b4-80fd3fa866b8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83b-4dbb-79bd-9675-bec2fc522cf9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83b-4dbc-7d4f-9679-fc3a47a630d2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83c-7473-74e8-a73e-ab165e3dc85c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83c-7475-716f-b70c-e960ceb6fbf6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83c-7476-7818-b517-c17ed6b6bfcc
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83c-7476-7ff1-9932-cd985296217c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83c-7474-783e-a4ae-3ed23adb8439
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83d-9b35-7b54-b0e9-525e4c49a03c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83d-9b36-732a-a32d-1775e1dc41ce
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83d-9b36-7c25-a9ed-47cecdb3fef0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83d-9b37-7683-b3ae-b4a82be06802
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83d-9b37-745e-82c3-f5c1c7389152
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83e-c1f2-731f-87eb-a93ac19a55da
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83e-c1f3-7a58-911c-2c02428fc1b8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83e-c1f4-7df8-afb0-78661b4e3204
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83e-c1f5-75f3-865d-56587f527561
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83e-c1f5-74be-a8fa-d2f8a91969d2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83f-e8ab-7824-83b1-efdaf533f2be
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83f-e8ad-7227-98ed-fe6b3a4cec3d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83f-e8ad-7b3c-a62e-3496cd66ebb6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83f-e8ac-7085-b7c4-a1d3cc758ff2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca83f-e8ae-7ca1-8159-33169fa130cf
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca841-0f77-726c-a2ab-2781581eeadd
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca841-0f79-7182-a213-c427a0fe10df
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca841-0f7b-7722-b474-95942f92d05e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca841-0f7d-7975-9bd7-b2aaf0a2bd68
+2026-03-01 07:16:02 | INFO | Eval scores: routing=0.121 errors=0.000 retry=0.300 synthesis=0.387 overall=0.202
+2026-03-01 07:16:02 | INFO | Step 2: Analyzing failure modes...
+2026-03-01 07:16:02 | INFO | Top failure modes: ['missed_errors', 'bad_retry_decisions', 'routing_failures']
+2026-03-01 07:16:02 | INFO | Step 3: Generating targeted training examples...
+2026-03-01 07:16:02 | INFO | Step 4: Merging base and targeted training data...
+2026-03-01 07:16:02 | INFO | Step 5: Starting fine-tuning iteration 2...
+2026-03-01 07:53:52 | INFO | Fine-tuning completed for iteration 2
+2026-03-01 07:53:52 | INFO | Step 6: Waiting for model server readiness...
+2026-03-01 07:53:52 | INFO | ============================================================
+2026-03-01 07:53:52 | INFO | ITERATION 2
+2026-03-01 07:53:52 | INFO | ============================================================
+2026-03-01 07:53:52 | INFO | Step 1: Running evaluation...
+
+[36m[1mweave[0m: Logged in as Weights & Biases user: leonwenhao.
+[36m[1mweave[0m: View Weave data at https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/weave
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca863-bd42-752d-9b77-47f1abdce90b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca864-e452-709c-9a2a-c944f4759bfe
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca864-e454-7c9f-9ab1-a06947a0686e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca864-e457-7ccd-9faf-b74e3606c52d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca864-e458-7c8f-8c39-4a3ffbaf6736
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca864-e459-7441-bd62-5f96e620c360
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca866-0b12-7414-a1eb-6b3c7d005ad0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca866-0b15-7fc0-aab5-64ddf7ab9cbc
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca866-0b15-7224-924d-5726ae77316d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca866-0b16-7af1-87d3-d4a2056b5e61
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca866-0b19-7bc5-ba0c-053815b0106c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca867-31c6-723b-92a9-a797d138b301
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca867-31c7-7c73-93b6-8d76917ad641
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca867-31ca-7068-83e2-bf03d46a3f50
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca867-31cb-7ded-ac72-0e595b8f7e49
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca867-31cb-76bb-8342-a7c381af8e02
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca868-588b-7b0f-9116-987201efa3d1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca868-588d-7dfe-ab19-b3cbff32fe02
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca868-588e-7670-a613-2c55c6f8107a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca868-588f-71b2-80f9-6ba46e69920e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca868-588e-76db-8181-474210de639c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca869-7f50-76dc-bf48-2280b08e3284
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca869-7f51-775e-a1e4-270a9dcc759a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca869-7f52-7764-82a9-4f4be64deb80
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca869-7f53-789c-a5ca-f385497b7bd7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca869-7f53-79ad-a34d-e7c5ddcbc563
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86a-a5ee-72f2-b13a-3f7eeca0e874
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86a-a5ef-7834-81ad-1d2a09d15995
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86a-a5f0-73a9-9e62-b31896ebd860
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86a-a5f0-75e2-849a-255462616154
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86a-a5f1-7067-a430-2e97c49f739e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86b-cc8f-7996-9d96-77f6d5447bfc
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86b-cc91-7c9c-a20a-9e5965681520
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86b-cc92-72f8-bf00-66379aa30e8f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86b-cc92-79c1-8ec4-0542f717e44c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86b-cc90-7d8e-97d0-3bf1922687f4
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86c-f33e-714a-8e69-b1c07df3cf84
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86c-f340-7e89-b93d-ac8635abbb59
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86c-f341-7605-ab52-50c9f87cf12d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86c-f342-7193-adc8-bd5ec56ce9e1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86c-f342-72cc-97cc-dc1993282a80
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86e-19eb-7915-b3a3-658bcb6d080b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86e-19ed-7ab0-81bb-a52f04804bc1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86e-19ec-784d-b8a1-2de8632be12f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86e-19ee-783e-a53f-ff590fde0769
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86e-19ee-7bce-8a3d-a8caf95df4e3
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86f-40a4-7054-a66e-e547ee01b0f9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86f-40a6-7ca4-8c99-33027164963b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86f-40a6-729a-9a50-bf62239a1749
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86f-40a7-7bb9-86ed-5173297f7d7c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca86f-40a7-74e4-a8b6-75ac94cb7fb3
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca870-675d-7ccb-8c65-79f4c8b35dd1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca870-675f-74c6-9962-074ac143e78e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca870-6760-737a-b98c-05339783ffd0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca870-675e-76a1-9027-60fcf7d04c3a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca870-6760-77c7-8995-1e2183f72f9a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca871-8e11-71c5-bc00-ea3dc61c931c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca871-8e12-799c-997d-a1eee1c0ab84
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca871-8e13-7b66-aaba-c2a70a639369
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca871-8e14-7a0a-aeb9-1f3d9e42866b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca871-8e14-7627-b9a3-0bd5d295fda1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca872-b4c3-7a4c-aef8-4dbe1f9a0eb1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca872-b4c4-7460-abb7-db610472ea77
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca872-b4c5-769a-bc7f-31720426cd2a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca872-b4c5-7668-83a5-f3f42bb088fb
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca872-b4c6-7e28-972e-8947ca1755aa
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca873-db7d-791f-8893-294682c76191
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca873-db7f-7a96-808c-856329ba137a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca873-db81-7b50-b843-404db9c3b827
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca873-db81-7eab-a880-0f3649ae276c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca873-db80-7654-828d-51b29b5b64b9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca875-0232-7df5-8e31-716e4a4efcc1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca875-0234-7e33-9007-fb01efc9c5a5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca875-0234-786b-a8c4-3386f9dd1c92
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca875-0235-7155-83ed-39c639e0d972
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca875-0235-7bd9-a95d-9009cc3df986
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca876-28cc-7792-97c9-b126a3b8a7ad
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca876-28cd-7412-acec-030c549d0a50
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca876-28ce-7c3f-ac50-0b7dcf8dbf96
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca876-28ce-7d62-86aa-ca4e89f39826
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca876-28cf-7d85-9688-25b2783d42fc
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca877-4f7e-7ef6-a9fb-da348f4189d6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca877-4f7f-7ab5-881f-8c4d30708cfc
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca877-4f80-78e0-88c0-3e7c7a7f0680
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca877-4f81-7400-b87f-ff71d8b3e997
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca877-4f80-7c68-9dcf-72b3486e2af1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca878-762a-763f-bad0-60fc93dc7049
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca878-762b-7dac-9a89-a0b333e14ac6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca878-762b-769b-9c79-025da93321b3
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca878-762c-7ca6-b389-f0deb01e65ee
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca878-762c-74ea-b08b-79af4bfe3af3
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca879-9cc8-790e-87f3-73abaea4f263
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca879-9cc9-7c93-81e1-33bd82d03f44
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca879-9cc9-7f70-890e-dd34f44581d7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca879-9cca-7b93-a406-ba2224b9ecc8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca879-9cca-7760-806f-d36fe8e12de8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87a-c374-7140-a593-1fde72e4065b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87a-c376-7973-88ed-b8f68b1d2af9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87a-c377-7c09-a8ac-2863221f9a66
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87a-c376-7df1-bac0-11ad4a18ae7d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87a-c377-7d65-be6a-f2008880bdb6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87b-ea23-7fce-92ad-224324432b41
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87b-ea24-7592-ba3b-f1b8e94c9258
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87b-ea25-7db1-8a01-65d9e4d72386
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87b-ea25-769d-a39c-6201f0fdc77d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87b-ea26-72de-9a2b-9f2eb23c52c1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87d-10dc-7e08-99b0-233a70c50390
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87d-10dd-7355-8d37-51bcb5c37323
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87d-10de-7c22-8521-d90f3bb9884a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87d-10de-77b5-8aab-c1820affeac8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87d-10df-7c32-aad0-0190cbfe171e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87e-3790-7340-ba16-ca403b207c6c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87e-3792-7dd9-9996-77e02f93edab
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87e-3791-7173-995a-45f462b466c6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87e-3793-782b-9bcf-10246b2f611a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87e-3792-7c26-b039-905652ab78eb
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87f-5e40-7028-93e7-a1e407417da9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87f-5e42-70e4-992f-d208d4b7f6da
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87f-5e43-7404-8f8f-86493f1c2c6e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87f-5e44-7004-b66c-d52b4585ad87
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca87f-5e42-71da-bc63-bbe22959c35b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca880-8506-718f-855a-e1506e14275f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca880-8507-794a-8a55-9f61186572c7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca880-8508-7412-9ec5-bebfcf3cd4f8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca880-8508-707a-9cca-9780889527f3
+2026-03-01 08:25:20 | INFO | Eval scores: routing=0.104 errors=0.010 retry=0.530 synthesis=0.377 overall=0.255
+2026-03-01 08:25:20 | INFO | Step 2: Analyzing failure modes...
+2026-03-01 08:25:20 | INFO | Top failure modes: ['missed_errors', 'bad_retry_decisions', 'routing_failures']
+2026-03-01 08:25:20 | INFO | Step 3: Generating targeted training examples...
+2026-03-01 08:25:20 | INFO | Step 4: Merging base and targeted training data...
+2026-03-01 08:25:20 | INFO | Step 5: Starting fine-tuning iteration 3...
+2026-03-01 09:03:07 | INFO | Fine-tuning completed for iteration 3
+2026-03-01 09:03:07 | INFO | Step 6: Waiting for model server readiness...
+2026-03-01 09:03:07 | INFO | ============================================================
+2026-03-01 09:03:07 | INFO | ITERATION 3
+2026-03-01 09:03:07 | INFO | ============================================================
+2026-03-01 09:03:07 | INFO | Step 1: Running evaluation...
+
+[36m[1mweave[0m: Logged in as Weights & Biases user: leonwenhao.
+[36m[1mweave[0m: View Weave data at https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/weave
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a3-20df-7dd6-a0f7-c178a4fa3dc0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a4-47f0-7272-a3d0-2f1bbe391c82
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a4-47f1-737a-bfa9-637f9bebc8b1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a4-47f4-7179-ab6d-53bc4f5e5ee8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a4-47f6-78e2-8bff-a4f50fbff09b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a4-47f5-7144-a855-b06f29ec0a61
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a5-6eb0-7ff8-81ca-c17bccf43099
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a5-6eb3-7c70-9ae2-40d6ca2b9d95
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a5-6eb4-7eae-9c1b-49ff3f2ced37
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a5-6eb4-76bc-a650-c683216d465e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a5-6eb7-78f7-b52b-5e541f62e118
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a6-9569-750d-b35d-3854ebd9c4a3
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a6-956a-7e48-8588-258329dce6a4
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a6-956d-73e3-8876-ddcd305f81ab
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a6-956c-7fcf-9f42-27c2efa9b3a2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a6-956d-7d60-9cca-6f0d39ed9f96
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a7-bc35-7510-a359-5e688cdd298f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a7-bc38-7f32-a567-c35fb92b0111
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a7-bc39-7e05-bc3b-886414778fff
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a7-bc3a-7e1e-a6d2-495f11281879
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a7-bc37-7226-9cfe-ddc571d950d0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a8-e2fc-78fd-88c7-4a5c15080cea
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a8-e2fd-75ab-8cdf-fa4f495f5789
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a8-e2fd-7eaf-a3e3-fb1e6778a037
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a8-e2fe-784e-a3a2-7434e326e6f2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8a8-e2fb-788c-a4c0-e10ebda1a028
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8aa-0996-7087-af94-150e405bd74b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8aa-0998-70cd-8f9c-d57e200ed9c9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8aa-0998-745a-91c2-1a9ad0e19d52
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8aa-0999-7d14-a00c-c83c3a7c58b7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8aa-0999-769d-9948-97b88871cf2f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ab-3038-78f5-b951-9d4bdae14603
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ab-3039-717f-9b48-9cf9fb2a1bf6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ab-303a-7241-be26-73e31188952c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ab-303b-7b95-a9cc-385db8a786cf
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ab-303b-7e24-aeb9-36bc3b03af7f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ac-56e9-7106-8284-21d1e3439855
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ac-56ea-7be1-9657-09f4eee0426d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ac-56eb-7520-8e8a-a790c97e5679
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ac-56eb-777d-be31-34b5d560ffc9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ac-56ea-77a6-aea4-7fc57ce0e33b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ad-7d98-700e-9e1c-d0af63db10f2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ad-7d99-70df-ab5a-f8237b6b444d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ad-7d99-7918-ac70-891c81a34ae0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ad-7d9a-7e7e-9b63-86ecea9f0dfc
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ad-7d9b-75a5-ac3e-ba85162f487a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ae-a44f-7c1f-8d66-b3b424fe7385
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ae-a451-7174-a1d8-cee18cf84c00
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ae-a451-7c65-a426-f39bac9c70ad
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ae-a452-74ba-bfb7-3ece0d6e8c11
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ae-a450-7bec-8ba1-74af4be0358c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8af-cb0f-70c4-b51a-b01933f8f40a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8af-cb10-7f9b-9bd5-d2a7385fce2a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8af-cb11-786b-94e1-d2910d062b0a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8af-cb11-770f-82ed-9a0ea34bced1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8af-cb10-7801-a3e5-d7c581acd2af
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b0-f1c9-7b79-98c7-b485ba1fc1a2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b0-f1ca-7ce6-92a5-5602042aefc7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b0-f1cb-79a8-9350-91e1f66c105e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b0-f1cc-72fc-bf31-a5c7ebeda42c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b0-f1cb-7cf1-8197-003e17fe3785
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b2-1881-7ce9-b964-501e082dbaf6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b2-1885-70ab-8003-8e5088670579
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b2-1885-74e6-8bef-80f8d7b5b4a2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b2-1886-73c3-a937-e7020626780a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b2-1884-78c4-8499-e91010ea21b8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b3-3f4e-7139-a230-ed124789ba78
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b3-3f4f-789b-851e-81c0dd507f81
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b3-3f50-7f76-84d2-6eed0e7f87fe
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b3-3f50-7579-a6f6-62fe5b5e3d88
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b3-3f4d-790d-9878-062bbc3c484f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b4-6604-7112-9b40-2b3aaa5a24ef
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b4-6606-7815-a03a-6c8431c496a0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b4-6607-70b7-926c-8547ca9b65d9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b4-6607-7d48-9810-1019d14e8e57
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b4-6606-7d1b-b1c4-ec1d8848e248
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b5-8caf-7957-9314-6a18c9635956
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b5-8cb1-7da7-9faf-c5fb25e9f241
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b5-8cb2-7b80-afa2-97d619362163
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b5-8cb2-71e3-98b9-af2ef9a69256
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b5-8cb0-7971-a8fa-aa3217fbf381
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b6-b364-71e4-9332-6e2fdea03e82
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b6-b366-79f6-9077-69f8bf684b0a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b6-b367-7ee9-894d-f517f3b70619
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b6-b367-7079-ae8d-b9fce6e1c880
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b6-b366-79ee-bc1a-3b082b50b563
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b7-da19-7a79-88c4-b591cb0ff0f6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b7-da1b-74a5-b788-22efd53c6312
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b7-da1b-7911-b13c-d76bb2600d85
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b7-da1c-7831-9755-bd514539e039
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b7-da1a-709e-9b08-e0ccb48cc156
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b9-00bb-7d7c-bf6d-07d60232ff77
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b9-00bd-7433-a3c0-230c8d7b92ce
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b9-00bf-7a4c-b7f6-491a7fa3aa0d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b9-00c1-7584-9715-7baf4c6a08df
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8b9-00be-7595-bbbc-d3a5bfd8e207
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ba-2776-74f0-9549-7d5dd2205283
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ba-2777-733a-9fcc-d5c5b8f9091b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ba-2778-73b0-9fd7-ca0f603daa5d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ba-2778-7a41-8e89-ca8f259e9fdb
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ba-2779-7f87-a874-200bdf89dacb
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bb-4e26-74f6-97f6-b53c73a8a4d0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bb-4e27-7d4b-ae5e-f56434f2b72e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bb-4e28-774d-8e52-be24df5f64f1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bb-4e29-7ccc-8827-89c26b21defb
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bb-4e28-73f2-b182-5af69510fe5e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bc-74dc-76e9-8d1b-a88491974c56
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bc-74dd-738c-a45b-b8c7e2b581fe
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bc-74de-7b6d-895c-e05ee56566d0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bc-74df-7f8b-8ffd-c2b1d8f5f3bb
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bc-74de-7292-913d-8d419728cac2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bd-9b90-7420-b084-d8b8579e723c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bd-9b92-7b4c-8bd7-1564f41ed121
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bd-9b92-768f-8212-44289bf58e2e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bd-9b93-7902-8e92-a5d427f98d2b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bd-9b93-70c3-b7a5-6ed2bf7c237c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8be-c246-7106-8cd2-75c0b5ebcbfc
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8be-c247-7280-8a5b-82049ced441b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8be-c248-7190-92d7-bb602586c05e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8be-c249-7147-a19f-4795c5cd0b8b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8be-c249-7ec6-a238-04d82d03fb6d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bf-e911-7939-921d-0d27a99c2d92
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bf-e912-71a5-b8b8-39292cb8b5a1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bf-e913-7398-8161-e776a42842a9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8bf-e914-7928-9617-434d323a232b
+2026-03-01 09:34:35 | INFO | Eval scores: routing=0.119 errors=0.000 retry=0.300 synthesis=0.395 overall=0.204
+2026-03-01 09:34:35 | INFO | Step 2: Analyzing failure modes...
+2026-03-01 09:34:35 | INFO | Top failure modes: ['missed_errors', 'routing_failures', 'bad_retry_decisions']
+2026-03-01 09:34:35 | INFO | Step 3: Generating targeted training examples...
+2026-03-01 09:34:35 | INFO | Step 4: Merging base and targeted training data...
+2026-03-01 09:34:35 | INFO | Step 5: Starting fine-tuning iteration 4...
+2026-03-01 10:12:23 | INFO | Fine-tuning completed for iteration 4
+2026-03-01 10:12:23 | INFO | Step 6: Waiting for model server readiness...
+2026-03-01 10:12:23 | INFO | ============================================================
+2026-03-01 10:12:23 | INFO | ITERATION 4
+2026-03-01 10:12:23 | INFO | ============================================================
+2026-03-01 10:12:23 | INFO | Step 1: Running evaluation...
+
+[36m[1mweave[0m: Logged in as Weights & Biases user: leonwenhao.
+[36m[1mweave[0m: View Weave data at https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/weave
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e2-8bf1-7a12-add3-1b34fc56a204
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e3-b2f7-73ef-a945-5b18c621558a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e3-b2f8-77db-9586-a73ec2db8a01
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e3-b2fb-7e08-9638-b4c413152449
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e3-b2fd-73a9-9aa9-ff54a94cfb2e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e3-b2fe-7cc7-9bfb-b0e263fe1363
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e4-d9be-7468-b4b2-cb22dd848b57
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e4-d9c1-742d-a459-600a430d0d59
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e4-d9c2-7017-96fc-0762d906e257
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e4-d9c3-77a4-8820-495b0e907fd4
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e4-d9c6-7080-8f73-776820a51395
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e6-0080-7b7f-b6d5-e21d116da046
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e6-0081-7f42-8791-291b59678a38
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e6-0084-7948-aab5-44cc519b4b6b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e6-0084-74f1-94f6-016de5e95d24
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e6-0085-727c-84d3-1e4c92937abf
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e7-2746-76eb-a00a-97f08fe7884a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e7-2749-7ae1-9063-7700fd1782d2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e7-274a-7b81-9cb3-d1e110790de9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e7-274b-778a-bdcd-3b1678adb51f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e7-274e-7905-a971-d9227ba74e29
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e8-4e10-7547-b23a-de84dd11034d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e8-4e11-7268-baf5-aaaf49668794
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e8-4e12-76ac-91b6-502c012a98e3
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e8-4e16-70ff-986a-9d0ca6b26c0e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e8-4e17-735f-9d91-c9bbb053aa72
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e9-74af-7b7e-b6b7-86f9e4cc4120
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e9-74b0-7f88-bd93-c748c61cd020
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e9-74b0-7955-974f-8fc1ce3eb986
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e9-74b1-7b77-97be-630b93f21665
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8e9-74b4-7dea-9069-9cbfe3c1aa67
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ea-9b55-7157-adfa-af35208e2ef1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ea-9b54-72f6-9165-bb4d2053ee0d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ea-9b56-7cee-9008-dbcb1365ff34
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ea-9b56-7291-b1a6-348d2b9d8dc1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ea-9b55-75a8-89cd-9e1de5af0d5d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8eb-c207-72fe-8f04-4e94b4e7a5f1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8eb-c208-7630-b69f-32a2098e7b91
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8eb-c209-79dd-8a17-ea9d7b066465
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8eb-c20a-7a60-b9c7-30c5145c5caf
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8eb-c209-7b76-a77a-954a5d422710
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ec-e8bc-74b4-9b61-ee949c165130
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ec-e8bd-7539-a05f-e20449dae12b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ec-e8be-717f-b3c2-73fabb49abef
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ec-e8be-781c-a76c-dbdadc1b6ad8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ec-e8bf-7c67-8754-ec3b20588369
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ee-0f76-70b2-b4d1-dab603be783c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ee-0f78-7197-9d5e-7c217bea6388
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ee-0f78-7ff8-be02-1547880ef63a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ee-0f79-7125-a0d0-e8756b3c4b53
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ee-0f77-7432-8383-8529405c2748
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ef-3638-7edd-9fdd-a86cc14211a7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ef-363a-79b7-8006-871efb242677
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ef-363a-7594-8840-729a9659b3f9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ef-363b-73e2-aba1-fcdc98d411c7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ef-3639-7f7c-b5a3-1199ac3e49c0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f0-5cfb-7990-8c2f-1857805bfa12
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f0-5cfc-707c-a231-e902d4f51901
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f0-5cfe-74e7-9ab0-7e76e6f7a007
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f0-5cfe-7950-abd1-732c6515c28a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f0-5cfd-7ac1-99d4-2ce3e47a8c92
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f1-83b9-7563-8e87-0b364f6ad8ae
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f1-83bb-7a32-9d08-b4b139d8b695
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f1-83ba-778e-a404-2f0ee566718f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f1-83bb-7876-a797-acff14869828
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f1-83ba-77b4-9a9d-0ff1bbb056b5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f2-aa7d-7c9a-9cb1-9e04a047cb1c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f2-aa7f-7533-9867-f5f1bddfed64
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f2-aa7f-716a-ad85-d5cc9c4817d2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f2-aa80-7503-82b5-70e7ebde463c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f2-aa7e-713a-b34c-8d17a4b7c90d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f3-d142-7313-85be-29251908413d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f3-d143-79e9-a08b-6cb26454b00b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f3-d145-7a4e-aa99-baee1ece1e6b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f3-d146-7b26-8b49-4094db69b290
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f3-d144-7ed1-9b59-f555d1a04368
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f4-f7e5-780a-91b2-889f100dcab1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f4-f7e6-7f44-a5f9-a34a010eaa8e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f4-f7e7-794f-b9cc-cc1af4b16259
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f4-f7e7-718c-90be-f794c5889f67
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f4-f7e8-74a1-b1c3-d0189a744379
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f6-1ea0-723d-93a1-9d630643e7a5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f6-1ea2-7ea1-be1e-bbb3dbf3645a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f6-1ea3-7f89-8158-4f0a479e6052
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f6-1ea4-7aac-baea-edf2844a0f96
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f6-1ea2-7940-9ce3-4c191d8bda83
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f7-4554-7d88-a762-f50fa07189a7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f7-4555-7575-aaeb-0d5791584a53
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f7-4555-7256-bd14-70ae6898afc1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f7-4556-756f-8e16-50b4147b6706
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f7-4556-7166-bd98-38c2cff5db0e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f8-6bf6-7d70-b8bf-c8bd6407b66e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f8-6bf8-7aae-a360-ee5e471598f2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f8-6bf9-7e38-87e1-59e3adc05e9e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f8-6bf9-751d-a873-745ca665ac58
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f8-6bf7-7993-bdca-ab79f758bf60
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f9-92ab-76fa-bfea-a1ebd37b225e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f9-92ac-7693-8167-606ea63968c5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f9-92ad-7ccd-9a9e-354591ab6c4c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f9-92ad-7f03-89b2-2369977ee94a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8f9-92ae-7902-8c88-4bb6c750869a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fa-b969-7a28-a4ae-5afc71902a34
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fa-b96a-752d-8df9-a61fe9fc9b6e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fa-b96a-75e7-badf-94c4ccb47abd
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fa-b96b-73b5-85d7-4ba268dde4cd
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fa-b96c-7e00-8db2-6dadc35ee2e2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fb-e024-7371-9a63-b3d8cae838ab
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fb-e025-72d8-be8b-fd6a358c1e2e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fb-e025-79dc-a2a6-649b6c252fbd
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fb-e026-703c-ac8a-8fc2dac82528
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fb-e026-7a76-a868-fb87307aa03a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fd-06e5-7ba7-a60f-2601d45e36ea
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fd-06e7-75d7-8321-b1dbc411a0fe
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fd-06e7-761b-ad04-774b2b320172
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fd-06e8-7e00-94ef-b9f0efdd93a8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fd-06e8-7109-ba83-eff8857ed31c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fe-2db0-78f5-92fd-24d1d5ba4f18
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fe-2db1-773c-bdc5-73ef3ea9e0ed
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fe-2db1-70d0-87e1-e8bb91748a33
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fe-2db2-711a-ad8e-70d8bdfff88a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8fe-2db2-7d76-a5a5-f9d5ff480e21
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ff-5483-7a33-b307-b8b77453c08d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ff-5484-73d1-a701-6f5afcbff613
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ff-5485-7501-bd86-8d94f69ba4b2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca8ff-5485-7f52-90ea-304262a1bec5
+2026-03-01 10:43:51 | INFO | Eval scores: routing=0.098 errors=0.010 retry=0.440 synthesis=0.451 overall=0.250
+2026-03-01 10:43:51 | INFO | Step 2: Analyzing failure modes...
+2026-03-01 10:43:51 | INFO | Top failure modes: ['missed_errors', 'routing_failures', 'bad_retry_decisions']
+2026-03-01 10:43:51 | INFO | Step 3: Generating targeted training examples...
+2026-03-01 10:43:51 | INFO | Step 4: Merging base and targeted training data...
+2026-03-01 10:43:51 | INFO | Step 5: Starting fine-tuning iteration 5...
+2026-03-01 11:21:40 | INFO | Fine-tuning completed for iteration 5
+2026-03-01 11:21:40 | INFO | Step 6: Waiting for model server readiness...
+2026-03-01 11:21:40 | INFO | ============================================================
+2026-03-01 11:21:40 | INFO | ITERATION 5
+2026-03-01 11:21:40 | INFO | ============================================================
+2026-03-01 11:21:40 | INFO | Step 1: Running evaluation...
+
+[36m[1mweave[0m: Logged in as Weights & Biases user: leonwenhao.
+[36m[1mweave[0m: View Weave data at https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/weave
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca921-f71a-7d30-a8bb-67b1c6ed698a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca923-1e1f-7849-8751-83adac357918
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca923-1e20-7296-b2aa-392ddecff418
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca923-1e22-70e7-96b3-5fbe01dfe640
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca923-1e24-73f2-8019-76d4c65dee2c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca923-1e24-7464-bc62-a72ead699a68
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca924-44db-75c7-a2ec-6052dce671a3
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca924-44dd-7ee5-9041-bbe712dca289
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca924-44de-7a90-bfbe-49823af09d12
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca924-44de-775b-b15d-be25a920e0ad
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca924-44e1-7e38-adb8-319ad6eea698
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca925-6b8b-747d-81b6-de90a1b8e6ef
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca925-6b8c-7357-bc23-e7016638f8d6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca925-6b8f-7d00-852d-ac7c7cecffd0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca925-6b8f-721f-9f2e-37c62053f305
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca925-6b90-7240-bb00-4df6daf5f81e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca926-924e-71fd-a2d3-1f40198eeb26
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca926-9250-7981-b427-7141068d9172
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca926-924d-7733-812c-360eab18c54b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca926-9251-742b-a9e6-583963648447
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca926-9251-7a73-bb16-b716c4604c68
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca927-b910-7d4b-841d-68376ef85ff5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca927-b911-71f6-a9dd-764dcbbca793
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca927-b912-78c8-9784-14cf9de3bd02
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca927-b913-7045-84e1-73c2455e7bf5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca927-b913-7643-822b-b1c743cce81c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca928-dfb0-7043-9e7c-dc6b36f1e790
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca928-dfb0-774e-ba3c-53d6f4e9514e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca928-dfb1-7347-9cb6-6007d40ed111
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca928-dfb1-7cdb-83fe-2b08673dcf3a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca928-dfaf-7c28-955f-aa920798e06d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92a-064e-7700-9f67-a4ab5b815d78
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92a-064f-77ce-a1e2-c8afd06a8284
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92a-0651-7ca0-8ac9-24b1ff2d0eae
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92a-0650-70ed-81b8-e9938c888d31
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92a-064f-7874-a7e9-ad6d6e255239
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92b-2cff-77e0-a8d1-8e0c5dad3439
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92b-2d02-79fc-bdd6-033c58713799
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92b-2d03-7a57-8a55-828a298b057d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92b-2d03-73ad-96f1-369d3eef0674
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92b-2d04-76e7-b9c4-fed694f7e20c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92c-53bd-7ad5-946a-3b0e37ea66f1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92c-53be-7c7d-bc9c-8ca2d14a55ed
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92c-53bf-7527-b7f4-73c75e1c003e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92c-53c0-760d-b1db-ca514c7e297a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92c-53bf-7d64-8605-d93958ae773e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92d-7a6f-7512-8b48-dd5d14b6f1a6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92d-7a71-70d1-b740-7ccb4a0b7e61
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92d-7a71-7398-8089-b0c77fab7b7c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92d-7a72-757c-a476-5c2d9a42ad4e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92d-7a72-7712-ac5e-a14c9cc6422b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92e-a12a-7765-b0c2-6d410c3e61c3
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92e-a12b-7174-b740-31fec30ac0d6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92e-a12c-7032-9b46-def84952b839
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92e-a12d-78b4-8c70-e53ef3078c0d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92e-a12d-7048-b1b0-97d9797eeca8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92f-c7dd-7ba9-bbd8-1da5c4cb3c17
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92f-c7df-7a86-9318-65aff4674153
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92f-c7e0-77da-be79-96291801017e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92f-c7e0-7411-90ea-8f5c8d14a6d5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca92f-c7de-78c3-ac36-71896f01dc46
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca930-ee99-7dc0-9648-f50d769a365f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca930-ee9a-74a7-b6f2-0e3beb119f61
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca930-ee9b-7cc1-82bc-3c898f2526c1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca930-ee9b-7ea0-b2d7-316194e77bbd
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca930-ee9c-7dfc-9497-51f77b1df57b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca932-1554-7512-8618-9d662d81f92c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca932-1557-7f8e-8d7c-aad85fc644dc
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca932-1557-7349-88a8-c8e68f0a4d5f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca932-1558-77e5-8963-87a02b717683
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca932-1555-7182-b07e-f7108114a46d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca933-3c08-73de-b084-7f328f3d670b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca933-3c09-7224-af25-fedbb9bfee11
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca933-3c0b-7c4b-b8f5-a011376ec10b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca933-3c0c-7fca-ae48-94f779eab715
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca933-3c0d-785c-b79f-7b191e69887b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca934-62a8-72b8-a038-f6fde8cd78ef
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca934-62a9-742b-9963-052a2f24b371
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca934-62ab-7d58-9046-5501b111b136
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca934-62aa-703f-99da-c179351956ec
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca934-62ac-7d5c-b23a-4c3a7b5b2f6a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca935-8959-739f-9d07-9f1b75e59e7b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca935-895a-7d01-a824-32b9ba247178
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca935-895b-7912-8cd8-031750ca05e0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca935-895c-7f8c-9818-6dd7be98dbe5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca935-895b-7987-a13f-07bd6797abf5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca936-b014-758d-b103-f9bc2343c8cc
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca936-b017-7e5f-99c6-8df79815b49f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca936-b017-7d1e-b19a-e114a8f1c07c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca936-b018-74e0-b7d8-6cb4e0a1e8d4
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca936-b016-796c-b0e4-0c22c4be52d9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca937-d6b7-7245-8ee4-1a5170c3ec68
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca937-d6b9-77a8-8cc7-963f911c040b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca937-d6ba-7ea5-95f8-cd8a1a52496c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca937-d6ba-74e1-b7be-e5d086227297
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca937-d6b8-7c6a-a450-5a99f986b424
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca938-fd67-767f-9220-19713c129fba
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca938-fd68-708a-a987-7dfeb2453ea8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca938-fd68-70ab-852b-0b56b971d7a7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca938-fd69-75e0-93ec-6a57cd699d38
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca938-fd69-728e-ad65-b0cd6501060f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93a-2415-7518-b798-f76782127895
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93a-2417-79c6-bfc9-8ffdc77b97aa
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93a-2419-7dcc-88a6-fe98fbc0312d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93a-2419-7247-afb1-d01bb6e0cf11
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93a-2418-7469-bcd1-5418e63927ba
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93b-4ac7-7aa0-b272-91bb6218559b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93b-4ac8-7c29-b810-ad46fc5feebe
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93b-4ac9-7961-8b73-84b306044836
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93b-4aca-75f8-bb19-eba13f77f29d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93b-4ac9-7117-9b19-db439ecd7a5e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93c-717a-7d28-9652-a5118718125f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93c-717c-7231-8171-97c67d062f4e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93c-717d-7df9-a190-32b7e7ca6f01
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93c-717d-798e-92da-dba5bef5c16e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93c-717c-74a7-86bc-a73f6266caec
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93d-982f-7ff5-9714-e88a929b107c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93d-9830-7a79-9572-fc77d6b4a3d0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93d-9832-7311-a353-b3aa31ccad4c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93d-9833-71bc-84ac-2b4a3b743e88
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93d-9831-75af-b8e8-e3b21538f831
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93e-bef6-729a-8fff-bb4dde61d50c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93e-bef7-78f0-9bfe-492e7e4a1e2e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93e-bef9-716f-943e-ed11e91603ba
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca93e-bef8-7957-a76e-a23bef42a2f9
+2026-03-01 11:53:07 | INFO | Eval scores: routing=0.097 errors=0.000 retry=0.400 synthesis=0.459 overall=0.239
+2026-03-01 11:53:07 | INFO | Step 2: Analyzing failure modes...
+2026-03-01 11:53:07 | INFO | Top failure modes: ['missed_errors', 'routing_failures', 'bad_retry_decisions']
+2026-03-01 11:53:07 | INFO | Step 3: Generating targeted training examples...
+2026-03-01 11:53:07 | INFO | Step 4: Merging base and targeted training data...
+2026-03-01 11:53:07 | INFO | Step 5: Starting fine-tuning iteration 6...
+2026-03-01 12:31:02 | INFO | Fine-tuning completed for iteration 6
+2026-03-01 12:31:02 | INFO | Step 6: Waiting for model server readiness...
+2026-03-01 12:31:02 | INFO | ============================================================
+2026-03-01 12:31:02 | INFO | ITERATION 6
+2026-03-01 12:31:02 | INFO | ============================================================
+2026-03-01 12:31:02 | INFO | Step 1: Running evaluation...
+
+[36m[1mweave[0m: Logged in as Weights & Biases user: leonwenhao.
+[36m[1mweave[0m: View Weave data at https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/weave
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca961-79bd-7cef-9eb3-6a99b22dd990
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca962-a0b2-79f7-880f-7796daec21b1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca962-a0b3-70cd-85f7-bb0e5581f417
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca962-a0b6-7c16-887a-9d129e55cc69
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca962-a0b9-7c2e-aa23-4042d98d061c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca962-a0b9-7e88-8597-405e364e5eaa
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca963-c74e-77f4-9cff-69d0e54b4f14
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca963-c751-77cc-a157-098e416fbedd
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca963-c752-7056-b013-700eb07d390f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca963-c752-7a34-840b-893d2f3adad3
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca963-c755-7d43-b384-844b0513da12
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca964-ede0-70d1-9809-084181851123
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca964-ede3-76f0-b694-ebab4c23e227
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca964-ede3-7f6f-80e0-a42e622e9c9c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca964-ede4-7faa-9274-d23e69bed438
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca964-edde-7a32-825d-99f0cfecc00c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca966-147c-7b59-ab04-65bfd3dd0183
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca966-147e-74ce-9865-aad4eba8189a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca966-1480-73e6-a43f-0c20bb00874c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca966-1480-7ecf-80aa-d8f07b3965a1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca966-147f-799b-8d2e-603f2b6895c1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca967-3b1a-76a0-8f36-4b957b8f5c05
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca967-3b1b-7fd1-9007-9267bd8fac2a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca967-3b1c-7ce8-9d81-f9c0851ef079
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca967-3b1d-79cd-a62a-d3f3c99968d4
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca967-3b1d-72aa-9bb3-bea4c87f08fd
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca968-618f-75c4-8510-b1221730db37
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca968-6191-7883-a6e1-1708b96f5188
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca968-6190-7260-beb5-018531363023
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca968-6192-7b97-bc62-deffb62bfddc
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca968-6191-7b15-87c8-13c8dac6c590
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca969-8809-7e19-aa71-0194678211fa
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca969-880a-733b-a51d-5a6fdc1d2c2d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca969-880b-7f99-9511-3eaecf075787
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca969-880c-730b-94d4-e97ebf049f6e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca969-880c-7541-bd02-eb8cc8c5dc5c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96a-ae8f-76ab-891c-a155b2f9fcb7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96a-ae90-70a2-a40f-88843cf0b0ca
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96a-ae91-77fa-9838-a276c37b0795
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96a-ae91-7ed7-bbf0-d214f43ae422
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96a-ae92-7f18-aa60-1ed71571c8cc
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96b-d514-73d5-bc16-66bfd2aab523
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96b-d516-7950-8cf8-507ddea3ed53
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96b-d517-7462-99e3-e21dbeb424a4
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96b-d517-7ef6-808a-00d806977d74
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96b-d516-718a-959f-2575a303e6cd
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96c-fba3-79de-8139-c09db0a8000c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96c-fba5-767e-ad4d-7f810850ece4
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96c-fba5-7ed0-b357-1cbaab3b05b6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96c-fba6-7318-9d8a-f02011443229
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96c-fba6-7ccb-b0f3-c2a94953cc59
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96e-2242-722f-bf53-22e3d1164e0c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96e-2243-7367-a0ba-dccea2857071
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96e-2244-7785-9ba5-ff1a2e67a755
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96e-2245-7ff7-9c0a-e9e934c8e7c9
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96e-2246-7534-b5e3-cd046e523bad
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96f-48d9-78df-8745-893d65b281de
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96f-48da-7957-bc93-872cb3913a98
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96f-48db-7ee9-b040-f2692167b3a8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96f-48db-7c72-b966-fd4e35529a04
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca96f-48dc-79b7-a3c6-242525348cbb
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca970-6f69-7313-a89b-27487779e710
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca970-6f6a-7fb4-be17-a5b16f948c8e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca970-6f6c-716c-9d87-82bdb2bb5bd7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca970-6f6b-7b50-8470-3549206878c5
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca970-6f6c-7391-9b6e-8b2eec346aad
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca971-9600-72b6-b7cd-a077422008b7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca971-9602-7171-861d-6b4f0d00fc10
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca971-9603-7442-bc7a-75bbf48edc40
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca971-9603-7dfe-b083-fd7f182c33ab
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca971-9602-737c-ba64-4b65a54bc451
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca972-bc96-735f-a284-712512990a0e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca972-bc98-71ef-a1ed-db438ec38c1b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca972-bc97-781c-b7db-9ea133e4ca28
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca972-bc9a-71c5-9cb2-2f1c2121d987
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca972-bc99-7516-90d9-ef5af4cdf3c3
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca973-e30b-7f58-a024-563652f9801a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca973-e30c-72e3-bab3-5d8b62328439
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca973-e30d-7d55-a48e-afcbcbfecb3b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca973-e30d-7ae1-8321-fe74fcde8a14
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca973-e30e-7e1b-953f-5d9627e10b84
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca975-0998-726a-b343-5406558af8c1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca975-0999-7e05-a04e-7eafe168aa0d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca975-099a-778c-86a0-d47e5a9c8da0
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca975-099b-767d-b2ef-879b8aea1b51
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca975-099a-7782-9b31-afaee2266bc2
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca976-301f-7372-80a2-87dc2e32a94e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca976-3020-711e-87bb-2755d6c3a7cf
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca976-3021-738c-98d4-232f9fde7422
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca976-3022-7624-9253-d0e3dd300cb7
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca976-3021-72ea-af02-4d93b0259cc3
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca977-5494-7104-8459-3f839cee9a56
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca977-5496-7933-8008-839f825d8dec
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca977-5495-7134-843a-47596de56123
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca977-5497-713d-adc1-347b430cbc30
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca977-5497-7d69-8aae-7e458d387f55
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca978-7b1e-73bc-a267-9c12f2f2a23e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca978-7b20-7819-ac74-3f97735a3e8a
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca978-7b20-7421-aeeb-7e79270888c8
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca978-7b21-7409-9c68-773a402f47e1
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca978-7b1f-715c-adcb-492aecc01a77
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca979-a1a7-75c4-9a01-9eb1ef016382
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca979-a1a9-7126-9eae-bb11cb67790f
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca979-a1aa-7bfa-90dd-fa4d6f0949c6
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca979-a1aa-7624-bbfd-86cd5e2093ac
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca979-a1a9-75aa-aebd-f17263c05932
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97a-c835-7dea-b0c3-59e50007406d
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97a-c836-7962-868d-0f32505c749c
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97a-c836-7f85-8523-0dd04d885b63
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97a-c837-793f-9fdf-1d0d3acdb23e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97a-c837-7eeb-9936-efadf3544546
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97b-eec4-7e8a-b171-19137ba7de46
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97b-eec5-756c-8923-271eb7981311
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97b-eec6-7e11-93da-760d53318329
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97b-eec7-7dcf-9def-de78dcc6cb02
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97b-eec6-7009-b9c6-74dee4cf8587
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97d-1565-7e19-be51-2303548e0c56
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97d-1566-7727-bb1f-547693bdf46e
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97d-1566-787f-83ff-3ba2bad60365
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97d-1567-756b-b2d2-26aaca70e2af
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97d-1567-76ec-9fb2-6b9c742c9403
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97e-3c04-7bbe-b094-ddaeb400d583
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97e-3c05-7718-8bef-cdd0c9768f8b
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97e-3c05-78eb-a44d-ab066ff7f4da
+[36m[1mweave[0m: 🍩 https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/r/call/019ca97e-3c06-7b84-b424-cebef9768824
+2026-03-01 13:02:28 | INFO | Eval scores: routing=0.100 errors=0.000 retry=0.490 synthesis=0.409 overall=0.250
+2026-03-01 13:02:28 | INFO | Final iteration reached; stopping after evaluation.
+2026-03-01 13:02:28 | INFO | 
+============================================================
+2026-03-01 13:02:28 | INFO | LOOP COMPLETE - SUMMARY
+2026-03-01 13:02:28 | INFO | ============================================================
+2026-03-01 13:02:28 | INFO | Iteration 0: overall=0.218 routing=0.088 errors=0.000 retry=0.410 synthesis=0.375 [COMPLETED]
+2026-03-01 13:02:28 | INFO | Iteration 1: overall=0.202 routing=0.121 errors=0.000 retry=0.300 synthesis=0.387 [COMPLETED]
+2026-03-01 13:02:28 | INFO | Iteration 2: overall=0.255 routing=0.104 errors=0.010 retry=0.530 synthesis=0.377 [COMPLETED]
+2026-03-01 13:02:28 | INFO | Iteration 3: overall=0.204 routing=0.119 errors=0.000 retry=0.300 synthesis=0.395 [COMPLETED]
+2026-03-01 13:02:28 | INFO | Iteration 4: overall=0.250 routing=0.098 errors=0.010 retry=0.440 synthesis=0.451 [COMPLETED]
+2026-03-01 13:02:28 | INFO | Iteration 5: overall=0.239 routing=0.097 errors=0.000 retry=0.400 synthesis=0.459 [COMPLETED]
+2026-03-01 13:02:28 | INFO | Iteration 6: overall=0.250 routing=0.100 errors=0.000 retry=0.490 synthesis=0.409 [FINAL_EVAL_COMPLETE]
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: 
+wandb: Run history:
+wandb: error_detection_recall ▁▁█▁█▁▁
+wandb:              iteration ▁▂▃▅▆▇█
+wandb:          overall_score ▃▁█▁▇▆▇
+wandb:     retry_intelligence ▄▁█▁▅▄▇
+wandb:       routing_accuracy ▁█▄█▃▃▄
+wandb:      synthesis_quality ▁▂▁▃▇█▄
+wandb: 
+wandb: Run summary:
+wandb: error_detection_recall 0
+wandb:              iteration 6
+wandb:          overall_score 0.25
+wandb:     retry_intelligence 0.49
+wandb:       routing_accuracy 0.1
+wandb:      synthesis_quality 0.409
+wandb: 
+wandb: 🚀 View run self-improvement-loop-20260301-053515 at: https://wandb.ai/leonwenhao-dolores-research/rlm-distiller/runs/yw9w1jfb
+wandb: ⭐️ View project at: https://wandb.ai/leonwenhao-dolores-research/rlm-distiller
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260301_053515-yw9w1jfb/logs

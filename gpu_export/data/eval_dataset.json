@@ -1,0 +1,466 @@
+[
+  {
+    "task": "Identify all SQL injection vulnerabilities in this Flask application",
+    "file_tree": "src/\n├── app.py (45 lines)\n├── routes/\n│   ├── users.py (167 lines)\n│   ├── search.py (98 lines)\n│   └── admin.py (134 lines)\n├── models/\n│   └── db.py (89 lines)\n└── tests/\n    └── test_routes.py (56 lines)",
+    "available_agents": ["security_analyzer", "code_reviewer", "sql_analyzer"],
+    "expected_routing": {
+      "sql_analyzer": ["routes/search.py", "routes/users.py", "routes/admin.py"],
+      "security_analyzer": ["models/db.py"],
+      "code_reviewer": ["tests/test_routes.py"]
+    },
+    "known_errors": [
+      "raw_sql_string_format_search_py_line_34",
+      "unparameterized_query_users_py_line_67",
+      "admin_endpoint_no_input_sanitization_line_89"
+    ],
+    "expected_retries": ["retry_sql_analyzer_on_search_py"],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "specific_line_numbers"]
+  },
+  {
+    "task": "Find reflected and stored XSS vectors in the Node.js Express app",
+    "file_tree": "server/\n├── index.js (38 lines)\n├── routes/\n│   ├── comments.js (124 lines)\n│   ├── profile.js (101 lines)\n│   └── search.js (88 lines)\n├── views/\n│   ├── profile.ejs (52 lines)\n│   └── search.ejs (47 lines)\n├── middleware/\n│   └── sanitize.js (41 lines)\n└── test/\n    └── xss.test.js (73 lines)",
+    "available_agents": ["security_analyzer", "frontend_analyzer", "node_reviewer", "test_analyzer"],
+    "expected_routing": {
+      "security_analyzer": ["routes/comments.js", "routes/profile.js", "routes/search.js"],
+      "frontend_analyzer": ["views/profile.ejs", "views/search.ejs"],
+      "node_reviewer": ["middleware/sanitize.js"],
+      "test_analyzer": ["test/xss.test.js"]
+    },
+    "known_errors": [
+      "unsanitized_comment_body_comments_js_line_57",
+      "profile_bio_rendered_raw_profile_ejs_line_19",
+      "search_query_reflected_without_escape_search_js_line_42",
+      "sanitize_middleware_not_applied_profile_route_line_63"
+    ],
+    "expected_retries": ["retry_frontend_analyzer_on_profile_ejs", "retry_security_analyzer_on_comments_js"],
+    "expected_synthesis_markers": ["cross_reference", "specific_line_numbers", "cross_agent_confirmation", "answer_ready_signal"]
+  },
+  {
+    "task": "Audit this Go API for authentication bypass issues",
+    "file_tree": "api/\n├── main.go (52 lines)\n├── handlers/\n│   ├── login.go (109 lines)\n│   ├── admin.go (142 lines)\n│   └── session.go (96 lines)\n├── auth/\n│   ├── jwt.go (87 lines)\n│   └── middleware.go (78 lines)\n└── internal/\n    └── roles.go (66 lines)",
+    "available_agents": ["security_analyzer", "go_static_analyzer", "auth_specialist"],
+    "expected_routing": {
+      "auth_specialist": ["handlers/login.go", "handlers/admin.go", "auth/jwt.go"],
+      "go_static_analyzer": ["auth/middleware.go", "internal/roles.go"],
+      "security_analyzer": ["handlers/session.go"]
+    },
+    "known_errors": [
+      "admin_handler_skips_role_check_admin_go_line_71",
+      "jwt_accepts_none_alg_jwt_go_line_28",
+      "middleware_allows_missing_session_cookie_line_44",
+      "session_refresh_missing_subject_validation_line_53"
+    ],
+    "expected_retries": [],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "answer_ready_signal"]
+  },
+  {
+    "task": "Detect CSRF weaknesses in this Django monolith",
+    "file_tree": "project/\n├── manage.py (23 lines)\n├── app/\n│   ├── views.py (211 lines)\n│   ├── forms.py (74 lines)\n│   ├── urls.py (55 lines)\n│   └── middleware.py (80 lines)\n├── templates/\n│   ├── account.html (61 lines)\n│   ├── transfer.html (58 lines)\n│   └── settings.html (49 lines)\n└── tests/\n    ├── test_csrf.py (91 lines)\n    └── test_transfer.py (66 lines)",
+    "available_agents": ["security_analyzer", "django_reviewer", "template_analyzer", "test_analyzer", "http_specialist"],
+    "expected_routing": {
+      "django_reviewer": ["app/views.py", "app/forms.py", "app/middleware.py"],
+      "template_analyzer": ["templates/account.html", "templates/transfer.html", "templates/settings.html"],
+      "http_specialist": ["app/urls.py"],
+      "test_analyzer": ["tests/test_csrf.py", "tests/test_transfer.py"],
+      "security_analyzer": ["app/views.py"]
+    },
+    "known_errors": [
+      "csrf_exempt_on_transfer_view_views_py_line_133",
+      "missing_csrf_token_transfer_html_line_21",
+      "settings_post_route_no_csrf_middleware_line_49",
+      "double_submit_cookie_check_absent_middleware_py_line_62",
+      "test_suite_does_not_assert_403_on_missing_token_test_csrf_py_line_44"
+    ],
+    "expected_retries": ["retry_template_analyzer_on_transfer_html"],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "specific_line_numbers", "answer_ready_signal"]
+  },
+  {
+    "task": "Find all hardcoded secrets and credential exposures in this mixed Rust/Python service",
+    "file_tree": "workspace/\n├── Cargo.toml (42 lines)\n├── src/\n│   ├── main.rs (120 lines)\n│   ├── config.rs (93 lines)\n│   └── telemetry.rs (64 lines)\n├── scripts/\n│   ├── bootstrap.py (87 lines)\n│   └── rotate_keys.py (72 lines)\n├── deploy/\n│   ├── docker-compose.yml (54 lines)\n│   └── prod.env.example (31 lines)\n└── .github/workflows/deploy.yml (78 lines)",
+    "available_agents": ["security_analyzer", "rust_reviewer", "devops_analyzer", "python_reviewer"],
+    "expected_routing": {
+      "rust_reviewer": ["src/config.rs", "src/main.rs"],
+      "python_reviewer": ["scripts/bootstrap.py", "scripts/rotate_keys.py"],
+      "devops_analyzer": ["deploy/docker-compose.yml", ".github/workflows/deploy.yml", "deploy/prod.env.example"],
+      "security_analyzer": ["src/config.rs", "deploy/prod.env.example"]
+    },
+    "known_errors": [
+      "aws_secret_hardcoded_config_rs_line_37",
+      "slack_webhook_plaintext_bootstrap_py_line_22",
+      "docker_compose_includes_prod_password_line_18",
+      "workflow_echoes_token_in_logs_deploy_yml_line_63",
+      "env_example_contains_real_api_key_line_7",
+      "rotate_keys_script_writes_keys_to_stdout_line_54"
+    ],
+    "expected_retries": ["retry_devops_analyzer_on_deploy_yml", "retry_security_analyzer_on_config_rs"],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "specific_line_numbers", "cross_agent_confirmation", "answer_ready_signal"]
+  },
+  {
+    "task": "Detect type-related runtime bugs in this Python analytics package",
+    "file_tree": "analytics/\n├── pipeline.py (133 lines)\n├── loaders.py (95 lines)\n├── transforms.py (141 lines)\n├── schema.py (58 lines)\n└── tests/test_pipeline.py (84 lines)",
+    "available_agents": ["python_type_checker", "bug_hunter", "test_analyzer"],
+    "expected_routing": {
+      "python_type_checker": ["pipeline.py", "loaders.py", "transforms.py", "schema.py"],
+      "bug_hunter": ["pipeline.py", "transforms.py"],
+      "test_analyzer": ["tests/test_pipeline.py"]
+    },
+    "known_errors": [
+      "dict_assumed_list_pipeline_py_line_51",
+      "optional_field_none_attribute_access_transforms_py_line_112",
+      "float_str_addition_loaders_py_line_68"
+    ],
+    "expected_retries": [],
+    "expected_synthesis_markers": ["cross_reference", "specific_line_numbers", "answer_ready_signal"]
+  },
+  {
+    "task": "Find off-by-one defects in this Node.js pagination and batching service",
+    "file_tree": "service/\n├── app.js (41 lines)\n├── pagination.js (117 lines)\n├── batcher.js (108 lines)\n├── routes.js (92 lines)\n├── validators.js (64 lines)\n└── tests/pagination.test.js (77 lines)",
+    "available_agents": ["node_reviewer", "bug_hunter", "test_analyzer", "math_reasoner"],
+    "expected_routing": {
+      "math_reasoner": ["pagination.js", "batcher.js"],
+      "node_reviewer": ["routes.js", "validators.js"],
+      "bug_hunter": ["pagination.js", "routes.js"],
+      "test_analyzer": ["tests/pagination.test.js"]
+    },
+    "known_errors": [
+      "page_count_excludes_last_page_pagination_js_line_44",
+      "slice_end_index_overruns_batcher_js_line_73"
+    ],
+    "expected_retries": ["retry_math_reasoner_on_batcher_js"],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "specific_line_numbers"]
+  },
+  {
+    "task": "Identify race conditions in this Go worker pool",
+    "file_tree": "worker/\n├── main.go (57 lines)\n├── pool.go (184 lines)\n├── queue.go (103 lines)\n├── metrics.go (74 lines)\n├── config.go (48 lines)\n├── internal/state.go (93 lines)\n└── tests/pool_test.go (116 lines)",
+    "available_agents": ["go_static_analyzer", "concurrency_expert", "test_analyzer", "bug_hunter"],
+    "expected_routing": {
+      "concurrency_expert": ["pool.go", "queue.go", "internal/state.go"],
+      "go_static_analyzer": ["metrics.go", "config.go"],
+      "test_analyzer": ["tests/pool_test.go"],
+      "bug_hunter": ["pool.go"]
+    },
+    "known_errors": [
+      "shared_map_write_without_lock_pool_go_line_91",
+      "waitgroup_done_missing_on_error_path_pool_go_line_133",
+      "queue_length_read_race_queue_go_line_58",
+      "atomic_counter_not_used_state_go_line_47"
+    ],
+    "expected_retries": ["retry_concurrency_expert_on_pool_go", "retry_test_analyzer_on_pool_test"],
+    "expected_synthesis_markers": ["cross_reference", "specific_line_numbers", "cross_agent_confirmation", "answer_ready_signal"]
+  },
+  {
+    "task": "Detect panic/null-equivalent bugs in this Rust API server",
+    "file_tree": "api_rust/\n├── Cargo.toml (39 lines)\n├── src/\n│   ├── main.rs (72 lines)\n│   ├── handlers.rs (151 lines)\n│   ├── state.rs (83 lines)\n│   └── db.rs (96 lines)\n└── tests/\n    └── handlers_test.rs (88 lines)",
+    "available_agents": ["rust_reviewer", "bug_hunter", "db_analyzer"],
+    "expected_routing": {
+      "rust_reviewer": ["src/handlers.rs", "src/state.rs"],
+      "db_analyzer": ["src/db.rs"],
+      "bug_hunter": ["src/handlers.rs", "tests/handlers_test.rs"]
+    },
+    "known_errors": [
+      "unwrap_on_optional_header_handlers_rs_line_61",
+      "expect_on_missing_env_main_rs_line_19",
+      "db_pool_option_unwrap_state_rs_line_44"
+    ],
+    "expected_retries": [],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "specific_line_numbers", "answer_ready_signal"]
+  },
+  {
+    "task": "Find business-logic bugs in this access control flow",
+    "file_tree": "authflow/\n├── gateway.py (91 lines)\n├── policy.py (123 lines)\n├── evaluator.py (104 lines)\n├── cache.py (67 lines)\n├── api/\n│   ├── routes.py (115 lines)\n│   └── schemas.py (53 lines)\n└── tests/test_policy.py (70 lines)",
+    "available_agents": ["logic_reviewer", "python_type_checker", "security_analyzer", "test_analyzer", "bug_hunter"],
+    "expected_routing": {
+      "logic_reviewer": ["policy.py", "evaluator.py"],
+      "security_analyzer": ["gateway.py", "api/routes.py"],
+      "python_type_checker": ["cache.py", "api/schemas.py"],
+      "bug_hunter": ["policy.py"],
+      "test_analyzer": ["tests/test_policy.py"]
+    },
+    "known_errors": [
+      "deny_rule_overridden_by_default_allow_policy_py_line_88",
+      "stale_cache_skips_revalidation_cache_py_line_39",
+      "route_admin_check_uses_user_scope_routes_py_line_57",
+      "priority_sort_descending_bug_evaluator_py_line_74"
+    ],
+    "expected_retries": ["retry_logic_reviewer_on_policy_py"],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "cross_agent_confirmation", "answer_ready_signal"]
+  },
+  {
+    "task": "Identify N+1 query patterns in this Django ecommerce backend",
+    "file_tree": "shop/\n├── manage.py (19 lines)\n├── catalog/\n│   ├── models.py (131 lines)\n│   ├── views.py (172 lines)\n│   └── serializers.py (99 lines)\n├── orders/\n│   ├── models.py (117 lines)\n│   └── services.py (88 lines)\n├── templates/\n│   └── cart.html (63 lines)\n└── tests/\n    └── test_queries.py (81 lines)",
+    "available_agents": ["performance_analyzer", "django_reviewer", "db_analyzer", "test_analyzer"],
+    "expected_routing": {
+      "performance_analyzer": ["catalog/views.py", "orders/services.py"],
+      "django_reviewer": ["catalog/serializers.py", "catalog/models.py"],
+      "db_analyzer": ["orders/models.py"],
+      "test_analyzer": ["tests/test_queries.py"]
+    },
+    "known_errors": [
+      "serializer_accesses_related_product_per_item_serializers_py_line_62",
+      "cart_view_no_prefetch_related_views_py_line_119",
+      "order_service_loops_customer_lookup_services_py_line_41"
+    ],
+    "expected_retries": ["retry_performance_analyzer_on_views_py"],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "specific_line_numbers", "answer_ready_signal"]
+  },
+  {
+    "task": "Locate memory leaks in this long-running Node.js websocket gateway",
+    "file_tree": "gateway/\n├── server.js (69 lines)\n├── ws/\n│   ├── hub.js (146 lines)\n│   ├── sessions.js (121 lines)\n│   └── heartbeat.js (74 lines)\n├── metrics/collector.js (82 lines)\n├── cache/lru.js (94 lines)\n└── tests/ws.test.js (91 lines)",
+    "available_agents": ["performance_analyzer", "node_reviewer", "memory_profiler", "test_analyzer"],
+    "expected_routing": {
+      "memory_profiler": ["ws/hub.js", "ws/sessions.js", "cache/lru.js"],
+      "performance_analyzer": ["metrics/collector.js", "ws/heartbeat.js"],
+      "node_reviewer": ["server.js"],
+      "test_analyzer": ["tests/ws.test.js"]
+    },
+    "known_errors": [
+      "closed_socket_not_removed_sessions_js_line_83",
+      "setinterval_not_cleared_heartbeat_js_line_52",
+      "listener_added_per_message_hub_js_line_109",
+      "metrics_buffer_unbounded_collector_js_line_64"
+    ],
+    "expected_retries": ["retry_memory_profiler_on_hub_js", "retry_node_reviewer_on_server_js"],
+    "expected_synthesis_markers": ["cross_reference", "specific_line_numbers", "cross_agent_confirmation"]
+  },
+  {
+    "task": "Find blocking I/O in this Go HTTP service",
+    "file_tree": "go-http/\n├── cmd/server/main.go (61 lines)\n├── internal/\n│   ├── handlers/report.go (121 lines)\n│   ├── handlers/export.go (97 lines)\n│   ├── storage/fs.go (109 lines)\n│   ├── storage/s3.go (88 lines)\n│   └── queue/worker.go (76 lines)\n└── tests/export_test.go (66 lines)",
+    "available_agents": ["go_static_analyzer", "performance_analyzer", "io_specialist"],
+    "expected_routing": {
+      "io_specialist": ["internal/storage/fs.go", "internal/handlers/export.go"],
+      "performance_analyzer": ["internal/handlers/report.go", "internal/queue/worker.go"],
+      "go_static_analyzer": ["cmd/server/main.go", "internal/storage/s3.go"]
+    },
+    "known_errors": [
+      "sync_file_read_in_request_path_report_go_line_52",
+      "zip_export_runs_on_main_goroutine_export_go_line_48",
+      "retry_sleep_blocks_worker_worker_go_line_34"
+    ],
+    "expected_retries": [],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "answer_ready_signal"]
+  },
+  {
+    "task": "Assess missing database indexes in this Python billing service",
+    "file_tree": "billing/\n├── app.py (44 lines)\n├── db.py (79 lines)\n├── models.py (138 lines)\n├── queries.py (164 lines)\n├── reports.py (112 lines)\n├── migrations/\n│   ├── 0001_init.sql (84 lines)\n│   └── 0002_add_invoice.sql (73 lines)\n└── tests/test_reports.py (59 lines)",
+    "available_agents": ["db_analyzer", "performance_analyzer", "python_reviewer", "test_analyzer", "sql_analyzer"],
+    "expected_routing": {
+      "sql_analyzer": ["migrations/0001_init.sql", "migrations/0002_add_invoice.sql", "queries.py"],
+      "db_analyzer": ["models.py", "db.py"],
+      "performance_analyzer": ["reports.py", "queries.py"],
+      "python_reviewer": ["app.py"],
+      "test_analyzer": ["tests/test_reports.py"]
+    },
+    "known_errors": [
+      "invoice_table_missing_customer_created_at_index_0002_add_invoice_sql_line_27",
+      "reports_query_filters_on_status_without_index_queries_py_line_103",
+      "compound_lookup_no_composite_index_models_py_line_66",
+      "count_distinct_scan_without_partial_index_reports_py_line_87"
+    ],
+    "expected_retries": ["retry_sql_analyzer_on_queries_py", "retry_db_analyzer_on_models_py", "retry_performance_analyzer_on_reports_py"],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "specific_line_numbers", "cross_agent_confirmation", "answer_ready_signal"]
+  },
+  {
+    "task": "Identify unbounded growth risks in this Rust event ingestion pipeline",
+    "file_tree": "ingest/\n├── Cargo.toml (33 lines)\n├── src/\n│   ├── main.rs (58 lines)\n│   ├── queue.rs (145 lines)\n│   ├── buffer.rs (132 lines)\n│   ├── writer.rs (90 lines)\n│   └── metrics.rs (71 lines)\n└── benches/throughput.rs (54 lines)",
+    "available_agents": ["rust_reviewer", "performance_analyzer", "memory_profiler", "bug_hunter"],
+    "expected_routing": {
+      "memory_profiler": ["src/queue.rs", "src/buffer.rs"],
+      "performance_analyzer": ["src/writer.rs", "src/metrics.rs"],
+      "rust_reviewer": ["src/main.rs"],
+      "bug_hunter": ["benches/throughput.rs"]
+    },
+    "known_errors": [
+      "queue_never_drops_acknowledged_items_queue_rs_line_101",
+      "buffer_capacity_doubles_without_upper_bound_buffer_rs_line_72",
+      "metrics_label_cardinality_unbounded_metrics_rs_line_44",
+      "writer_retry_queue_grows_on_failures_writer_rs_line_57",
+      "benchmark_generates_events_without_backpressure_throughput_rs_line_31"
+    ],
+    "expected_retries": ["retry_memory_profiler_on_buffer_rs"],
+    "expected_synthesis_markers": ["cross_reference", "specific_line_numbers", "answer_ready_signal"]
+  },
+  {
+    "task": "Audit Python dependencies for known CVEs and vulnerable pins",
+    "file_tree": "ml-api/\n├── requirements.txt (49 lines)\n├── requirements-dev.txt (27 lines)\n├── setup.cfg (65 lines)\n├── app.py (54 lines)\n├── workers.py (71 lines)\n└── scripts/check_deps.py (63 lines)",
+    "available_agents": ["dependency_auditor", "security_analyzer", "python_reviewer"],
+    "expected_routing": {
+      "dependency_auditor": ["requirements.txt", "requirements-dev.txt", "setup.cfg"],
+      "security_analyzer": ["scripts/check_deps.py"],
+      "python_reviewer": ["app.py", "workers.py"]
+    },
+    "known_errors": [
+      "urllib3_pin_vulnerable_cve_2023_43804_requirements_txt_line_12",
+      "jinja2_old_version_with_ssti_patch_missing_requirements_txt_line_19",
+      "pyyaml_unpinned_setup_cfg_line_37"
+    ],
+    "expected_retries": [],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "specific_line_numbers"]
+  },
+  {
+    "task": "Resolve dependency version conflicts in this Node monorepo",
+    "file_tree": "monorepo/\n├── package.json (82 lines)\n├── package-lock.json (942 lines)\n├── packages/\n│   ├── api/package.json (63 lines)\n│   ├── web/package.json (71 lines)\n│   ├── shared/package.json (44 lines)\n│   └── worker/package.json (57 lines)\n└── scripts/audit.js (68 lines)",
+    "available_agents": ["dependency_auditor", "node_reviewer", "build_engineer", "security_analyzer"],
+    "expected_routing": {
+      "dependency_auditor": ["package.json", "package-lock.json", "packages/api/package.json", "packages/web/package.json", "packages/shared/package.json", "packages/worker/package.json"],
+      "build_engineer": ["packages/web/package.json", "packages/shared/package.json"],
+      "node_reviewer": ["scripts/audit.js"],
+      "security_analyzer": ["package-lock.json"]
+    },
+    "known_errors": [
+      "react_version_mismatch_web_vs_shared_package_json",
+      "eslint_peer_conflict_api_package_json",
+      "duplicate_axios_major_versions_lockfile",
+      "webpack_plugin_requires_node18_but_worker_targets_node16"
+    ],
+    "expected_retries": ["retry_dependency_auditor_on_lockfile"],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "cross_agent_confirmation", "answer_ready_signal"]
+  },
+  {
+    "task": "Identify unused and bloated dependencies in this Go service",
+    "file_tree": "go-deps/\n├── go.mod (54 lines)\n├── go.sum (311 lines)\n├── cmd/app/main.go (49 lines)\n├── internal/api/handlers.go (92 lines)\n├── internal/tasks/runner.go (105 lines)\n├── internal/utils/strings.go (33 lines)\n└── tools.go (28 lines)",
+    "available_agents": ["dependency_auditor", "go_static_analyzer"],
+    "expected_routing": {
+      "dependency_auditor": ["go.mod", "go.sum", "tools.go"],
+      "go_static_analyzer": ["cmd/app/main.go", "internal/api/handlers.go", "internal/tasks/runner.go", "internal/utils/strings.go"]
+    },
+    "known_errors": [
+      "grpc_dependency_unused_in_runtime_binary_go_mod_line_21",
+      "old_yaml_parser_leftover_tooling_only_go_mod_line_28",
+      "test_framework_pulled_into_main_module_tools_go_line_9"
+    ],
+    "expected_retries": [],
+    "expected_synthesis_markers": ["cross_reference", "specific_line_numbers", "answer_ready_signal"]
+  },
+  {
+    "task": "Check this Rust crate graph for incompatible licenses",
+    "file_tree": "rust-lic/\n├── Cargo.toml (41 lines)\n├── Cargo.lock (507 lines)\n├── src/lib.rs (96 lines)\n├── src/ffi.rs (73 lines)\n├── src/bin/cli.rs (84 lines)\n└── deny.toml (58 lines)",
+    "available_agents": ["dependency_auditor", "rust_reviewer", "compliance_analyzer", "security_analyzer"],
+    "expected_routing": {
+      "dependency_auditor": ["Cargo.toml", "Cargo.lock"],
+      "compliance_analyzer": ["deny.toml", "Cargo.lock"],
+      "rust_reviewer": ["src/lib.rs", "src/ffi.rs", "src/bin/cli.rs"],
+      "security_analyzer": ["Cargo.lock"]
+    },
+    "known_errors": [
+      "gpl3_transitive_dependency_conflicts_with_apache2_policy",
+      "unknown_license_for_internal_git_dependency_cargo_toml_line_34",
+      "dual_license_not_documented_for_cli_binary"
+    ],
+    "expected_retries": ["retry_compliance_analyzer_on_deny_toml", "retry_dependency_auditor_on_cargo_lock"],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "cross_agent_confirmation", "answer_ready_signal"]
+  },
+  {
+    "task": "Find high-risk transitive vulnerabilities in this JavaScript build chain",
+    "file_tree": "frontend/\n├── package.json (76 lines)\n├── pnpm-lock.yaml (1431 lines)\n├── vite.config.ts (47 lines)\n├── src/main.ts (39 lines)\n├── src/build/plugins.ts (82 lines)\n└── scripts/sbom.mjs (66 lines)",
+    "available_agents": ["dependency_auditor", "security_analyzer", "node_reviewer", "build_engineer", "supply_chain_analyzer"],
+    "expected_routing": {
+      "dependency_auditor": ["package.json", "pnpm-lock.yaml"],
+      "supply_chain_analyzer": ["pnpm-lock.yaml", "scripts/sbom.mjs"],
+      "build_engineer": ["vite.config.ts", "src/build/plugins.ts"],
+      "security_analyzer": ["pnpm-lock.yaml"],
+      "node_reviewer": ["scripts/sbom.mjs", "src/main.ts"]
+    },
+    "known_errors": [
+      "esbuild_transitive_cve_not_patched_in_lockfile",
+      "postinstall_script_dependency_executes_remote_code",
+      "deprecated_tar_version_with_path_traversal_risk",
+      "sbom_script_ignores_dev_dependency_attack_surface"
+    ],
+    "expected_retries": ["retry_supply_chain_analyzer_on_lockfile"],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "specific_line_numbers", "cross_agent_confirmation", "answer_ready_signal"]
+  },
+  {
+    "task": "Assess this Python service for God-class refactoring opportunities",
+    "file_tree": "refactor-py/\n├── service.py (412 lines)\n├── domain.py (122 lines)\n├── adapters.py (104 lines)\n├── repositories.py (98 lines)\n├── cli.py (59 lines)\n└── tests/test_service.py (102 lines)",
+    "available_agents": ["refactor_analyzer", "python_reviewer", "architecture_reviewer", "test_analyzer"],
+    "expected_routing": {
+      "refactor_analyzer": ["service.py"],
+      "architecture_reviewer": ["domain.py", "adapters.py", "repositories.py"],
+      "python_reviewer": ["cli.py", "service.py"],
+      "test_analyzer": ["tests/test_service.py"]
+    },
+    "known_errors": [
+      "service_class_has_19_public_methods_service_py",
+      "service_mixes_io_validation_and_business_logic_line_140",
+      "service_directly_constructs_sql_queries_line_273",
+      "tests_mock_everything_due_to_tight_coupling_test_service_py_line_61"
+    ],
+    "expected_retries": ["retry_refactor_analyzer_on_service_py"],
+    "expected_synthesis_markers": ["cross_reference", "specific_line_numbers", "cross_agent_confirmation", "answer_ready_signal"]
+  },
+  {
+    "task": "Find duplicated logic and consolidation candidates in this Node API",
+    "file_tree": "dup-node/\n├── src/server.ts (52 lines)\n├── src/routes/users.ts (131 lines)\n├── src/routes/admin.ts (126 lines)\n├── src/services/userService.ts (118 lines)\n├── src/services/adminService.ts (121 lines)\n├── src/utils/validators.ts (73 lines)\n└── test/routes.test.ts (69 lines)",
+    "available_agents": ["refactor_analyzer", "node_reviewer", "architecture_reviewer"],
+    "expected_routing": {
+      "refactor_analyzer": ["src/routes/users.ts", "src/routes/admin.ts", "src/services/userService.ts", "src/services/adminService.ts"],
+      "node_reviewer": ["src/utils/validators.ts", "src/server.ts"],
+      "architecture_reviewer": ["src/services/userService.ts", "src/services/adminService.ts"]
+    },
+    "known_errors": [
+      "role_check_duplicated_with_divergent_branches_users_and_admin_routes",
+      "payload_validation_copied_in_two_services_with_different_defaults",
+      "error_mapping_logic_repeated_and_inconsistent"
+    ],
+    "expected_retries": [],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "answer_ready_signal"]
+  },
+  {
+    "task": "Identify circular dependencies in this Go package layout",
+    "file_tree": "go-cycles/\n├── go.mod (31 lines)\n├── internal/auth/auth.go (88 lines)\n├── internal/user/user.go (94 lines)\n├── internal/session/session.go (82 lines)\n├── internal/http/router.go (109 lines)\n├── internal/events/events.go (76 lines)\n├── internal/store/store.go (97 lines)\n└── cmd/api/main.go (44 lines)",
+    "available_agents": ["go_static_analyzer", "architecture_reviewer", "refactor_analyzer", "bug_hunter"],
+    "expected_routing": {
+      "go_static_analyzer": ["internal/auth/auth.go", "internal/user/user.go", "internal/session/session.go", "internal/store/store.go"],
+      "architecture_reviewer": ["internal/http/router.go", "internal/events/events.go"],
+      "refactor_analyzer": ["internal/auth/auth.go", "internal/user/user.go", "internal/session/session.go"],
+      "bug_hunter": ["cmd/api/main.go"]
+    },
+    "known_errors": [
+      "auth_imports_user_which_imports_session_creating_cycle",
+      "session_package_calls_back_into_auth_for_token_refresh",
+      "events_package_depends_on_router_and_router_depends_on_events"
+    ],
+    "expected_retries": ["retry_architecture_reviewer_on_router_go", "retry_go_static_analyzer_on_session_go"],
+    "expected_synthesis_markers": ["cross_reference", "specific_line_numbers", "cross_agent_confirmation"]
+  },
+  {
+    "task": "Assess dead code and unreachable branches in this Rust CLI",
+    "file_tree": "rust-dead/\n├── Cargo.toml (26 lines)\n├── src/main.rs (84 lines)\n├── src/commands/build.rs (121 lines)\n├── src/commands/deploy.rs (118 lines)\n├── src/commands/legacy.rs (146 lines)\n├── src/config.rs (67 lines)\n└── tests/cli_test.rs (73 lines)",
+    "available_agents": ["rust_reviewer", "refactor_analyzer", "test_analyzer", "bug_hunter"],
+    "expected_routing": {
+      "refactor_analyzer": ["src/commands/legacy.rs", "src/commands/build.rs", "src/commands/deploy.rs"],
+      "rust_reviewer": ["src/main.rs", "src/config.rs"],
+      "test_analyzer": ["tests/cli_test.rs"],
+      "bug_hunter": ["src/commands/legacy.rs"]
+    },
+    "known_errors": [
+      "legacy_command_never_registered_in_main_rs_line_46",
+      "feature_flag_branch_always_false_deploy_rs_line_71",
+      "unused_config_field_deprecated_endpoint_config_rs_line_28",
+      "dead_match_arm_build_rs_line_93"
+    ],
+    "expected_retries": [],
+    "expected_synthesis_markers": ["cross_reference", "specific_line_numbers", "answer_ready_signal"]
+  },
+  {
+    "task": "Evaluate mixed-concern boundaries in this TypeScript full-stack app",
+    "file_tree": "ts-app/\n├── package.json (88 lines)\n├── src/server/api.ts (154 lines)\n├── src/server/repo.ts (98 lines)\n├── src/server/events.ts (77 lines)\n├── src/client/dashboard.tsx (173 lines)\n├── src/client/state.ts (112 lines)\n├── src/shared/contracts.ts (65 lines)\n├── src/shared/formatters.ts (54 lines)\n├── scripts/seed.ts (61 lines)\n└── test/integration.test.ts (103 lines)",
+    "available_agents": ["architecture_reviewer", "refactor_analyzer", "node_reviewer", "frontend_analyzer", "test_analyzer"],
+    "expected_routing": {
+      "architecture_reviewer": ["src/server/api.ts", "src/server/repo.ts", "src/server/events.ts", "src/shared/contracts.ts"],
+      "frontend_analyzer": ["src/client/dashboard.tsx", "src/client/state.ts"],
+      "refactor_analyzer": ["src/shared/formatters.ts", "scripts/seed.ts"],
+      "node_reviewer": ["package.json", "src/server/api.ts"],
+      "test_analyzer": ["test/integration.test.ts"]
+    },
+    "known_errors": [
+      "dashboard_component_executes_sql_through_api_client_dashboard_tsx_line_128",
+      "server_api_formats_ui_strings_in_backend_layer_api_ts_line_102",
+      "seed_script_reuses_runtime_event_bus_seed_ts_line_39",
+      "shared_formatter_depends_on_browser_api_formatters_ts_line_26",
+      "repo_module_emits_websocket_events_directly_repo_ts_line_83"
+    ],
+    "expected_retries": ["retry_architecture_reviewer_on_api_ts", "retry_frontend_analyzer_on_dashboard_tsx"],
+    "expected_synthesis_markers": ["cross_reference", "confidence_score", "specific_line_numbers", "cross_agent_confirmation", "answer_ready_signal"]
+  }
+]

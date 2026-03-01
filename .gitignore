@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environment
+.env
+*.pem
+private_key*
+venv/
+.venv/
+
+# Model weights (too large for GitHub)
+*.safetensors
+*.bin
+*.pt
+models/
+model_cache/
+.cache/
+
+# HuggingFace
+.huggingface/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (demo-site)
+demo-site/node_modules/
+demo-site/dist/
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code
+.claude/

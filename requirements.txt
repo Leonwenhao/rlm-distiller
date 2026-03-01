@@ -1,0 +1,6 @@
+mistralai>=1.0.0
+wandb
+weave
+mcp[cli]>=1.0.0
+anthropic
+httpx

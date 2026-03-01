@@ -1,0 +1,240 @@
+{
+  "iteration": 5,
+  "timestamp": "2026-03-01T11:53:07.577250",
+  "model_endpoint": "http://localhost:8000/v1",
+  "model_name": "rlm-distiller",
+  "routing_accuracy": 0.097,
+  "error_detection_recall": 0.0,
+  "retry_intelligence": 0.4,
+  "synthesis_quality": 0.459,
+  "overall_score": 0.239,
+  "per_example_scores": [
+    {
+      "example_id": 0,
+      "task": "Identify all SQL injection vulnerabilities in this Flask application",
+      "routing_accuracy": 0.043,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 1.0,
+      "synthesis_quality": 0.667,
+      "overall_score": 0.427
+    },
+    {
+      "example_id": 1,
+      "task": "Find reflected and stored XSS vectors in the Node.js Express app",
+      "routing_accuracy": 0.071,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 1.0,
+      "synthesis_quality": 0.5,
+      "overall_score": 0.393
+    },
+    {
+      "example_id": 2,
+      "task": "Audit this Go API for authentication bypass issues",
+      "routing_accuracy": 0.252,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.0,
+      "synthesis_quality": 0.667,
+      "overall_score": 0.23
+    },
+    {
+      "example_id": 3,
+      "task": "Detect CSRF weaknesses in this Django monolith",
+      "routing_accuracy": 0.22,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.25,
+      "synthesis_quality": 0.5,
+      "overall_score": 0.242
+    },
+    {
+      "example_id": 4,
+      "task": "Find all hardcoded secrets and credential exposures in this mixed Rust/Python service",
+      "routing_accuracy": 0.087,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.25,
+      "synthesis_quality": 0.6,
+      "overall_score": 0.234
+    },
+    {
+      "example_id": 5,
+      "task": "Detect type-related runtime bugs in this Python analytics package",
+      "routing_accuracy": 0.027,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.0,
+      "synthesis_quality": 0.333,
+      "overall_score": 0.09
+    },
+    {
+      "example_id": 6,
+      "task": "Find off-by-one defects in this Node.js pagination and batching service",
+      "routing_accuracy": 0.085,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.25,
+      "synthesis_quality": 0.667,
+      "overall_score": 0.251
+    },
+    {
+      "example_id": 7,
+      "task": "Identify race conditions in this Go worker pool",
+      "routing_accuracy": 0.539,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.75,
+      "synthesis_quality": 0.5,
+      "overall_score": 0.447
+    },
+    {
+      "example_id": 8,
+      "task": "Detect panic/null-equivalent bugs in this Rust API server",
+      "routing_accuracy": 0.0,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.0,
+      "synthesis_quality": 0.25,
+      "overall_score": 0.062
+    },
+    {
+      "example_id": 9,
+      "task": "Find business-logic bugs in this access control flow",
+      "routing_accuracy": 0.04,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.25,
+      "synthesis_quality": 0.25,
+      "overall_score": 0.135
+    },
+    {
+      "example_id": 10,
+      "task": "Identify N+1 query patterns in this Django ecommerce backend",
+      "routing_accuracy": 0.12,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.25,
+      "synthesis_quality": 0.25,
+      "overall_score": 0.155
+    },
+    {
+      "example_id": 11,
+      "task": "Locate memory leaks in this long-running Node.js websocket gateway",
+      "routing_accuracy": 0.0,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.25,
+      "synthesis_quality": 0.333,
+      "overall_score": 0.146
+    },
+    {
+      "example_id": 12,
+      "task": "Find blocking I/O in this Go HTTP service",
+      "routing_accuracy": 0.035,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.0,
+      "synthesis_quality": 0.333,
+      "overall_score": 0.092
+    },
+    {
+      "example_id": 13,
+      "task": "Assess missing database indexes in this Python billing service",
+      "routing_accuracy": 0.02,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 1.0,
+      "synthesis_quality": 0.6,
+      "overall_score": 0.405
+    },
+    {
+      "example_id": 14,
+      "task": "Identify unbounded growth risks in this Rust event ingestion pipeline",
+      "routing_accuracy": 0.15,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.25,
+      "synthesis_quality": 0.667,
+      "overall_score": 0.267
+    },
+    {
+      "example_id": 15,
+      "task": "Audit Python dependencies for known CVEs and vulnerable pins",
+      "routing_accuracy": 0.133,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.0,
+      "synthesis_quality": 0.667,
+      "overall_score": 0.2
+    },
+    {
+      "example_id": 16,
+      "task": "Resolve dependency version conflicts in this Node monorepo",
+      "routing_accuracy": 0.125,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 1.0,
+      "synthesis_quality": 0.25,
+      "overall_score": 0.344
+    },
+    {
+      "example_id": 17,
+      "task": "Identify unused and bloated dependencies in this Go service",
+      "routing_accuracy": 0.071,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.0,
+      "synthesis_quality": 0.667,
+      "overall_score": 0.184
+    },
+    {
+      "example_id": 18,
+      "task": "Check this Rust crate graph for incompatible licenses",
+      "routing_accuracy": 0.0,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.25,
+      "synthesis_quality": 0.25,
+      "overall_score": 0.125
+    },
+    {
+      "example_id": 19,
+      "task": "Find high-risk transitive vulnerabilities in this JavaScript build chain",
+      "routing_accuracy": 0.058,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 1.0,
+      "synthesis_quality": 0.2,
+      "overall_score": 0.315
+    },
+    {
+      "example_id": 20,
+      "task": "Assess this Python service for God-class refactoring opportunities",
+      "routing_accuracy": 0.043,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.25,
+      "synthesis_quality": 0.25,
+      "overall_score": 0.136
+    },
+    {
+      "example_id": 21,
+      "task": "Find duplicated logic and consolidation candidates in this Node API",
+      "routing_accuracy": 0.0,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.0,
+      "synthesis_quality": 0.333,
+      "overall_score": 0.083
+    },
+    {
+      "example_id": 22,
+      "task": "Identify circular dependencies in this Go package layout",
+      "routing_accuracy": 0.033,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 1.0,
+      "synthesis_quality": 0.667,
+      "overall_score": 0.425
+    },
+    {
+      "example_id": 23,
+      "task": "Assess dead code and unreachable branches in this Rust CLI",
+      "routing_accuracy": 0.243,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 0.0,
+      "synthesis_quality": 0.667,
+      "overall_score": 0.228
+    },
+    {
+      "example_id": 24,
+      "task": "Evaluate mixed-concern boundaries in this TypeScript full-stack app",
+      "routing_accuracy": 0.024,
+      "error_detection_recall": 0.0,
+      "retry_intelligence": 1.0,
+      "synthesis_quality": 0.4,
+      "overall_score": 0.356
+    }
+  ],
+  "failed_predictions": 0,
+  "num_examples": 25
+}
